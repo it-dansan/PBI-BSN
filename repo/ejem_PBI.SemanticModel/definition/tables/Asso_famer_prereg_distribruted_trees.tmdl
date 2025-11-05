@@ -1,0 +1,51 @@
+table Asso_famer_prereg_distribruted_trees
+	lineageTag: 97f3b5d2-086c-4374-9dd3-238dfcd7dd63
+	sourceLineageTag: 38052bf5-9806-4a09-87ee-6505441ce3f2
+
+	column id_farmer
+		dataType: int64
+		lineageTag: 84b58a4a-0c63-4e10-86e8-174f3052b1c7
+		sourceLineageTag: e99c4134-9d35-4df3-a469-312bd7cd1971
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column 'Preregistred trees'
+		dataType: int64
+		lineageTag: 09eb60a2-2761-41db-98d7-ee423421a95c
+		sourceLineageTag: d97a4155-973f-47e8-a406-cbc9e080bcf6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Preregistred trees
+
+		annotation SummarizationSetBy = User
+
+	column 'Distributed trees'
+		dataType: int64
+		lineageTag: da67b14f-b4fa-4dd4-a421-16003a82fb07
+		sourceLineageTag: 183d8765-7980-4de9-94b5-7337fc00e3e9
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Distributed trees
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8de4ea1d-3bc1-45f5-a397-83b14ba25e4c
+		sourceLineageTag: a955c114-a617-4fff-8062-770b9a5b0bdd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Asso_famer_prereg_distribruted_trees = entity
+		mode: directQuery
+		source
+			entityName: Asso_famer_prereg_distribruted_trees
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

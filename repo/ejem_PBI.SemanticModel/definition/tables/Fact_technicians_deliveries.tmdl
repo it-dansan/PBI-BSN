@@ -1,0 +1,50 @@
+table Fact_technicians_deliveries
+	lineageTag: fc678a78-0223-4504-90e7-22b579a0cd7f
+	sourceLineageTag: a21833e6-f788-402f-bf1f-74b485e75e21
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: a879259b-e300-420e-8d77-a1fdac1adcff
+		sourceLineageTag: 5fa18ad0-aa8f-4b1c-a37b-6cca4c2f7f14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_id
+		dataType: int64
+		lineageTag: 3ba975cc-f6e4-4dd4-9c16-8fbb1c99f78c
+		sourceLineageTag: 4df00265-513e-4ac8-889f-ad322692600d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_id
+
+		annotation SummarizationSetBy = User
+
+	column interviewer_id
+		dataType: int64
+		lineageTag: 1573981e-7711-4fd1-af03-9991b78df76d
+		sourceLineageTag: e2357790-ebe9-4b15-bb38-62d5eeec0b83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: interviewer_id
+
+		annotation SummarizationSetBy = User
+
+	column nb_delivered_trees
+		dataType: int64
+		lineageTag: 4e057a0a-f2e9-48c1-8f96-22e753543253
+		sourceLineageTag: 8544c2de-7fa4-49ed-bd3d-ea65752e29bb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_delivered_trees
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_technicians_deliveries = entity
+		mode: directQuery
+		source
+			entityName: Fact_technicians_deliveries
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

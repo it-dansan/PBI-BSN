@@ -1,0 +1,361 @@
+table Fact_timesheets
+	lineageTag: 9aa09678-7359-445a-88b3-ef95b639a834
+	sourceLineageTag: a387048f-d6a1-470a-84e1-77b8b98773cd
+
+	column INTERNAL_ID
+		dataType: string
+		lineageTag: 92a95852-5c36-47c7-8ac9-9346d8e28800
+		sourceLineageTag: c9b188ef-ed96-4679-a2e8-3174bb2aa900
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: INTERNAL_ID
+
+		annotation SummarizationSetBy = User
+
+	column TRANSACTION_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 06418923-ea80-437e-9144-99369b5b8f26
+		sourceLineageTag: 10f1f8cf-5cf1-458d-b5a2-86da01ccc15b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TRANSACTION_DATE
+
+		annotation SummarizationSetBy = User
+
+	column TIMESHEET_SUBSIDIARY
+		dataType: string
+		lineageTag: dcfdd104-2503-4d1a-a5b0-41c9bdf1aab1
+		sourceLineageTag: f249e6ed-186b-4499-9bbc-90ab7dde985b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TIMESHEET_SUBSIDIARY
+
+		annotation SummarizationSetBy = User
+
+	column EMPLOYEE_SUBSIDIARY
+		dataType: string
+		lineageTag: 0c80455f-fab9-4857-beeb-dfc23c1aa977
+		sourceLineageTag: f68f8f1a-2895-464d-8a2b-231b6b14a268
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EMPLOYEE_SUBSIDIARY
+
+		annotation SummarizationSetBy = User
+
+	column EMPLOYEE_NAME
+		dataType: string
+		lineageTag: ad8d3217-b7aa-47b6-852c-4cb217ccf987
+		sourceLineageTag: 22d7583c-f9e0-47aa-addb-fa9ead3dd083
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EMPLOYEE_NAME
+
+		annotation SummarizationSetBy = User
+
+	column EMPLOYEE_GRADE
+		dataType: string
+		lineageTag: 6014b667-01b2-47a1-ac27-1951f1205ff9
+		sourceLineageTag: d06f7290-1aae-45fa-af48-e0f1520a2843
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EMPLOYEE_GRADE
+
+		annotation SummarizationSetBy = User
+
+	column DEPARTMENT
+		dataType: string
+		lineageTag: ee822594-9207-4e7c-8ebb-998a971e1fb4
+		sourceLineageTag: bd81906c-25e4-4246-9d8c-b8cf8573bfb5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEPARTMENT
+
+		annotation SummarizationSetBy = User
+
+	column DEPARTEMENT_NO_HIERARCHY
+		dataType: string
+		lineageTag: 8039cf9d-ad29-416d-b214-2c58f97a41a1
+		sourceLineageTag: d6d354f4-e5c1-463c-8796-0b33f823d2dd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DEPARTEMENT_NO_HIERARCHY
+
+		annotation SummarizationSetBy = User
+
+	column BUSINESS_UNIT
+		dataType: string
+		lineageTag: d8e2a1d3-3210-4bd3-af3e-6c4ee1c35725
+		sourceLineageTag: 35febee0-d3e0-4b60-98f1-ef961f02c273
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BUSINESS_UNIT
+
+		annotation SummarizationSetBy = User
+
+	column TEAM_REGION
+		dataType: string
+		lineageTag: 965d9b38-b8b2-4d55-bb24-fe2e1438840e
+		sourceLineageTag: 02cb6a46-4064-4e31-9b61-5d9e307fb575
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TEAM_REGION
+
+		annotation SummarizationSetBy = User
+
+	column EMPLOYEE_COUNTRY
+		dataType: string
+		lineageTag: 41d3a537-3191-4a4e-8a2b-c602db9174d0
+		sourceLineageTag: 346a5acf-737c-406f-969a-c5a288fe24c4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EMPLOYEE_COUNTRY
+
+		annotation SummarizationSetBy = User
+
+	column EMPLOYEE_SUPERVISOR
+		dataType: string
+		lineageTag: cf8ac57e-dabc-4943-889d-a4e980c190e7
+		sourceLineageTag: 9f16856f-2f2f-4e18-9735-c4f5046fcdeb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EMPLOYEE_SUPERVISOR
+
+		annotation SummarizationSetBy = User
+
+	column CUSTOMER
+		dataType: string
+		lineageTag: 34472e7d-6045-4a29-a750-d4a90339234d
+		sourceLineageTag: 8231d941-501b-400b-83c1-33cdba66cb6e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CUSTOMER
+
+		annotation SummarizationSetBy = User
+
+	column PROJECT
+		dataType: string
+		lineageTag: 319c1c13-b335-41d6-a1dc-d01f267662ac
+		sourceLineageTag: 3b3c6145-68ce-4c52-911a-23a95d43cb64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PROJECT
+
+		annotation SummarizationSetBy = User
+
+	column SUBPROJECT
+		dataType: string
+		lineageTag: f393d455-8a44-461a-adea-3aa216233da7
+		sourceLineageTag: 1bba29f0-897f-47fa-914d-252dfa54faf0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SUBPROJECT
+
+		annotation SummarizationSetBy = User
+
+	column WAVE
+		dataType: string
+		lineageTag: 180a80ee-10c8-42f2-8256-afe17fd46ddb
+		sourceLineageTag: f7c2504b-88ff-454d-976d-14fa9070e7ad
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WAVE
+
+		annotation SummarizationSetBy = User
+
+	column PROGRAM_SEGMENT
+		dataType: string
+		lineageTag: f56e3913-a907-4e2b-9cf5-b761210e9f07
+		sourceLineageTag: d2ecffd3-a8e4-4e04-9efc-9504cd517d88
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PROGRAM_SEGMENT
+
+		annotation SummarizationSetBy = User
+
+	column ACTIVITIES
+		dataType: string
+		lineageTag: 2df899b1-b713-4a19-8031-674d94a9b68b
+		sourceLineageTag: 9931bcb6-1264-4c19-a766-90dfbbd9b779
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ACTIVITIES
+
+		annotation SummarizationSetBy = User
+
+	column APPROVAL_STATUS
+		dataType: string
+		lineageTag: 11217400-0864-46c9-b736-3d829bafbe36
+		sourceLineageTag: e9b6416b-2f31-4012-9a20-5e9eb56de372
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: APPROVAL_STATUS
+
+		annotation SummarizationSetBy = User
+
+	column DURATION_PER_HOUR
+		dataType: double
+		lineageTag: 5f2c8d19-e13e-4e2e-9e00-582524e7aa49
+		sourceLineageTag: 2b36aadb-9e4b-43b5-9be1-8e8dd6143114
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: DURATION_PER_HOUR
+
+		annotation SummarizationSetBy = User
+
+	column DURATION_PER_DAY
+		dataType: double
+		lineageTag: e40ffa48-563c-4727-b5f6-8229d3c575a5
+		sourceLineageTag: 1a1c0aca-c5b3-489d-9dcf-e55019a3317b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: DURATION_PER_DAY
+
+		annotation SummarizationSetBy = User
+
+	column FTE_PER_YEAR
+		dataType: double
+		lineageTag: 3ec4f6ea-fb8b-4e29-9ed8-94ac63ac80fe
+		sourceLineageTag: 06854aa1-1d2c-463c-ad50-0ca329f8f231
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: FTE_PER_YEAR
+
+		annotation SummarizationSetBy = User
+
+	column FTE_PER_MONTH
+		dataType: double
+		lineageTag: 005e73f5-da5f-4d01-830b-14816f8f96b8
+		sourceLineageTag: 6b095e57-fb04-45b8-bc9a-8957aa046c45
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: FTE_PER_MONTH
+
+		annotation SummarizationSetBy = User
+
+	column COST_IN_USD
+		dataType: double
+		lineageTag: 02e2e718-4aee-408b-821c-001646ffc38b
+		sourceLineageTag: ee8348cc-6a99-4eb4-8e34-9e23c9fe6f28
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: COST_IN_USD
+
+		annotation SummarizationSetBy = User
+
+	column MAIN_ACTIVITY
+		dataType: string
+		lineageTag: 018ed894-79fc-4090-8c15-7ac007010c2d
+		sourceLineageTag: 8ad632a6-a9c4-4b41-a125-6d00801e984f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MAIN_ACTIVITY
+
+		annotation SummarizationSetBy = User
+
+	column VERY_MAIN_ACTIVITY
+		dataType: string
+		lineageTag: d3481500-e52f-4c26-ad05-2c3e911706ff
+		sourceLineageTag: a792bdff-9131-4e57-9247-c89d2c819785
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: VERY_MAIN_ACTIVITY
+
+		annotation SummarizationSetBy = User
+
+	column MAIN_TEAM
+		dataType: string
+		lineageTag: 4fa0210b-3588-4558-9363-1b2003059b78
+		sourceLineageTag: d7205d86-0a96-41f6-82e7-3ca94a59bd6b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: MAIN_TEAM
+
+		annotation SummarizationSetBy = User
+
+	column BILLABLE_BOOL
+		dataType: string
+		lineageTag: ed093e87-518d-4ac1-94a3-045315fe2d67
+		sourceLineageTag: 3e9f20ea-bfff-404a-9baa-f9652072a050
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: BILLABLE_BOOL
+
+		annotation SummarizationSetBy = User
+
+	column AT_DELIVERY_BOOL
+		dataType: string
+		lineageTag: 6bef9de6-86b4-4bfb-85fb-fd0860d99459
+		sourceLineageTag: ce95aa0c-4c81-455c-97b1-2e08ddd78fc4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AT_DELIVERY_BOOL
+
+		annotation SummarizationSetBy = User
+
+	column CHECK_ACTIVITY_BOOL
+		dataType: string
+		lineageTag: 2d57edda-e70f-489f-9d48-400d3250cdbb
+		sourceLineageTag: f9a5933c-7d3c-4e9b-b405-aabb9137e8c8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CHECK_ACTIVITY_BOOL
+
+		annotation SummarizationSetBy = User
+
+	column CHECK_WAVE
+		dataType: string
+		lineageTag: b4c60211-4c1e-44b2-9b3f-f5fb65e95776
+		sourceLineageTag: 352e386d-2976-4422-9728-e7beaba7c011
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CHECK_WAVE
+
+		annotation SummarizationSetBy = User
+
+	column CHECK_PROGRAM
+		dataType: string
+		lineageTag: 6b8e270b-19d7-4a78-9b69-0e84c3ce6846
+		sourceLineageTag: fae6ae7f-abca-415c-8c5b-1df2c31d6a05
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CHECK_PROGRAM
+
+		annotation SummarizationSetBy = User
+
+	column CHECK_NB_ACTIVITIES
+		dataType: string
+		lineageTag: fa4f2f29-a5b0-4d2d-9337-8ddae74d9cac
+		sourceLineageTag: f9958772-4c94-4670-baa7-dcc3c427246f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CHECK_NB_ACTIVITIES
+
+		annotation SummarizationSetBy = User
+
+	column PROBLEM_BOOL
+		dataType: string
+		lineageTag: 23fa8c0a-3cd7-4c64-ad12-0517d94db5f6
+		sourceLineageTag: 8a8b0225-db30-4de4-b78a-6bc5ed0e115e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PROBLEM_BOOL
+
+		annotation SummarizationSetBy = User
+
+	column OPPORTUNITY
+		dataType: string
+		lineageTag: 4f214f44-cc94-49bc-b19d-2625952c9bcd
+		sourceLineageTag: 3387df8f-fba8-4de2-8afd-5fc8a17503c7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: OPPORTUNITY
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_timesheets = entity
+		mode: directQuery
+		source
+			entityName: Fact_timesheets
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

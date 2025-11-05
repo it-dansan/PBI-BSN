@@ -1,0 +1,114 @@
+table Fact_farmer_incentives
+	lineageTag: b7b05913-6d97-4704-9863-456d7b43976b
+	sourceLineageTag: 232c0c07-7bf8-466b-ae36-319109d5113d
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: cab76e01-f4c6-4bb0-bcae-78e404cc0b6f
+		sourceLineageTag: 8dd5a109-2d9b-47d9-8aaf-dd153445de8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: double
+		lineageTag: a4fe0b5e-4dd6-4887-bd75-8b4fc632bd73
+		sourceLineageTag: ff034fb0-3691-4476-9371-cffdc6b9a0ba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 0c08d56e-5353-45db-a10a-e9f0e27ffc6b
+		sourceLineageTag: 2b741013-19b2-418a-8d05-944a76e8fb52
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmer_wave_incentive_id
+		dataType: double
+		isHidden
+		lineageTag: e60a5fef-95b5-4f25-ae96-4f7cfc96559f
+		sourceLineageTag: e5bfd7d8-2b24-4d82-90a4-eae1f9d23eaa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_wave_incentive_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_is_recognizing_incentive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ef90e711-f65a-4d2d-a023-feef334b4f01
+		sourceLineageTag: 471cfbe0-de17-4161-aa1d-1f91d5815ecb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_is_recognizing_incentive
+
+		annotation SummarizationSetBy = User
+
+	column farmer_is_confirming_incentives
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: af1b6540-e557-4100-97ba-a380c0e9f41b
+		sourceLineageTag: 5db7e211-ab89-401a-9d91-c69d93666b06
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_is_confirming_incentives
+
+		annotation SummarizationSetBy = User
+
+	column farmer_incentive_satisfaction_level
+		dataType: string
+		lineageTag: 43cf7825-9c4b-4103-b34a-39b1ba04db7a
+		sourceLineageTag: 7bcadf49-09a5-4566-a316-7a19c0171ef8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_incentive_satisfaction_level
+
+		annotation SummarizationSetBy = User
+
+	column farmer_has_signed_incentive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1faf2cec-81bf-437d-bf61-1739bcaf2640
+		sourceLineageTag: 771d4272-79d1-49f8-ab65-14a94a02f220
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_has_signed_incentive
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 6dee83a5-0a3f-47d5-87f6-479634282229
+		sourceLineageTag: 8d07734d-4c99-4f16-ba98-e92a791937af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: 56799e96-74e7-48fa-9048-68a8a18b7233
+		sourceLineageTag: c8c4ffaf-7e37-4d5d-8a0c-fa716be6cbe8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_incentives = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_incentives
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

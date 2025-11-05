@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "162eaaf4f9854d9d33dd",
+  "position": {
+    "x": 107.14285714285715,
+    "y": 104.28571428571429,
+    "z": 0,
+    "height": 411.42857142857144,
+    "width": 974.28571428571433
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_species"
+                    }
+                  },
+                  "Property": "species_latin_name"
+                }
+              },
+              "queryRef": "Dim_species.species_latin_name",
+              "nativeQueryRef": "species_latin_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_species"
+                    }
+                  },
+                  "Property": "species_id"
+                }
+              },
+              "queryRef": "Dim_species.species_id",
+              "nativeQueryRef": "species_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_species"
+                    }
+                  },
+                  "Property": "species"
+                }
+              },
+              "queryRef": "Dim_species.species",
+              "nativeQueryRef": "species"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,38 @@
+table _Dict_local
+	lineageTag: adf52aec-936a-4145-936b-5776b3d275dc
+
+	column Category
+		dataType: string
+		lineageTag: a50c4b18-449d-45b8-a5af-f0f60eadfcbc
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Naming '
+		dataType: string
+		lineageTag: b87a0f38-62d8-4b8f-867a-9f10f6bc6521
+		summarizeBy: none
+		sourceColumn: "Naming "
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 76e858bd-aeb9-4575-ae62-fd783868bae3
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Dict_local = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("jVLBbtswDP0Vwrs4RbZ1xfYBXQsUOywt0g3FUOTASHTCTZYMik7Wff0oJW1zqy8GRdJ8j+/x8bG52qKgUxLOqJwicPTsUJPkZt5cs5BT+EqROnaMwlTS72CQ5EdHkkG3qGBdTDvyYHEgzAopEqgQQSeph7ufS2gfLpeLb4sbeA8xqf1HkLEn8DY6csXGbPC1cjuQHPgsaUiiM2hW87fY/jC8DJ6zCq9HJV+pnrwro1xIXlPgHckTtPTXhdFz3NgSQ8CoFs4mgA1lyydCsfhqFKGo8Mue8IA7gpY/EOxLdHF+8Rm6JLW3vqZMzxwdQfkMpWiZ+5op2qxpwzEWxqmrCTPjt9k0YeypFnkoph3stEGlb8d+xJDBxK+yGaQ+900yICkGuBRC4H4I1JsohtRucfZSxVI9Er+5uzdL0P3JJlgHgWPdMMIX6EnLde3Z02wO35NdSBLyZzCgODKO+jqtPTvWiyaf5i8te9ZtGu0ibTGrHM0XgoPn5Kc4sRj7tclhjENyhuhS34/lXoskp2WX0uFozfSPJZFkg5H/1ZnNavUf", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Category = _t, #"Naming " = _t, Description = _t]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"Category", type text}, {"Naming ", type text}, {"Description", type text}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+

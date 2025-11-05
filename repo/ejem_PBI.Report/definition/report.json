@@ -1,0 +1,466 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": {
+        "visual": "1.8.96",
+        "report": "2.0.96",
+        "page": "1.3.96"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Custom3703019775115457.json",
+      "reportVersionAtImport": {
+        "visual": "2.1.0",
+        "report": "3.0.0",
+        "page": "2.3.0"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f7d8d76f00033286becc",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_project_team_data_validation"
+              }
+            },
+            "Property": "data_validated"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "Dim_project_team_data_validation",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "data_validated"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "true"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "c6101c2b39d4a2d04402",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_subprojectwaves_allocations"
+              }
+            },
+            "Property": "client"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "requireSingleSelect": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "70db97f03ca4a3005548",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "country"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      },
+      {
+        "name": "c212b8a415dd55625908",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "project"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "Dim_subprojectwaves",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "project"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Multi - Peru Jubilacion Segura'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isHiddenInViewMode": true,
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      },
+      {
+        "name": "af1d6d5f2bca02d10735",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "4c8d20400483c17400b0",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_species"
+              }
+            },
+            "Property": "species_latin_name"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "Dim_species",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "species_latin_name"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'coffea arabica'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "5e82232fe5757740cbde",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_species"
+              }
+            },
+            "Property": "species_latin_name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "aa8cc42adf5847833797",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_farmers"
+              }
+            },
+            "Property": "location_level_3"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "boxPloty6C987A9E682A4A859272BFEC966AF372",
+    "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+    "InforiverCharts582F6C55AB6442EF8FA129089285CB47",
+    "InforiverFilterF39DAE8D57A743EF89F5C3809DEE2B69",
+    "lollipopbar3906E14BA17BC92E464868265E6264D9",
+    "lollipopBarChart29115F0ADEDB437DBCDF8E8A3E66E088",
+    "polarB605C239BFD9BFED71A7A3BE1340EFEB",
+    "RadarChart1446119667547",
+    "radarChart5F59D098BB90499F8C33EBEBCEE4FEBF",
+    "radarChartE89D21F3E4E64221B79113B5015EA81B"
+  ],
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Custom3703019775115457.json",
+          "path": "Custom3703019775115457.json",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive104134503310132869.PNG",
+          "path": "Diapositive104134503310132869.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive118935281946754385.PNG",
+          "path": "Diapositive118935281946754385.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive18900364436117015.PNG",
+          "path": "Diapositive18900364436117015.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive212115781544513737.PNG",
+          "path": "Diapositive212115781544513737.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive36776094438791995.PNG",
+          "path": "Diapositive36776094438791995.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive46884254891792736.PNG",
+          "path": "Diapositive46884254891792736.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive534706590111959024.PNG",
+          "path": "Diapositive534706590111959024.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive623345321887792092.PNG",
+          "path": "Diapositive623345321887792092.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive76859701087093324.PNG",
+          "path": "Diapositive76859701087093324.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive846357461191806104.PNG",
+          "path": "Diapositive846357461191806104.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Diapositive99853660388248034.PNG",
+          "path": "Diapositive99853660388248034.PNG",
+          "type": "Image"
+        },
+        {
+          "name": "Frame_(12)8163680538820142.png",
+          "path": "Frame_(12)8163680538820142.png",
+          "type": "Image"
+        },
+        {
+          "name": "Frame_(14)955216978982182.png",
+          "path": "Frame_(14)955216978982182.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "filterPaneHiddenInEditMode": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

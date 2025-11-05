@@ -1,0 +1,104 @@
+table Dim_subprojectwaves
+	lineageTag: ad745421-af5c-48f3-9dbb-cb1b17589a1e
+	sourceLineageTag: c8b8a81f-d2f4-4b2e-bbd9-04eb1a34bfdc
+
+	column subprojectwave_id
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		lineageTag: 5cdfa69a-f7a7-4be7-99c5-158a99717fa1
+		sourceLineageTag: 94b92a57-3422-4f16-a533-81b28d1e9599
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column project
+		dataType: string
+		lineageTag: 45c73287-2c74-413f-8f48-54f7274e8e7d
+		sourceLineageTag: 463c6d98-0207-42dd-8ab5-501574181b6c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: project
+
+		annotation SummarizationSetBy = User
+
+	column subproject
+		dataType: string
+		lineageTag: c0a44393-34e8-43f4-bc83-207d6ec5c615
+		sourceLineageTag: 80a3ff1f-a044-42b5-886b-b3cfe8910565
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subproject
+
+		annotation SummarizationSetBy = User
+
+	column wave
+		dataType: string
+		lineageTag: 754327ed-a7c0-49b2-b147-9010211b228d
+		sourceLineageTag: cdfe7f22-fed9-4988-ac44-11b563d38daa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: wave
+
+		annotation SummarizationSetBy = User
+
+	column region
+		dataType: string
+		lineageTag: 932edfcd-9601-47f0-92f5-ed27c273fb8d
+		sourceLineageTag: 4ece5fd4-d817-41fa-af66-64728f67cd64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = User
+
+	column country
+		dataType: string
+		lineageTag: e74fb387-87fa-4ff1-bf00-fde5f783b99a
+		sourceLineageTag: 9d12321a-42d0-4d86-ace3-246a180d869b
+		dataCategory: Country
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = User
+
+	column planting_year
+		dataType: int64
+		lineageTag: 8c66af38-8b88-459c-9d5b-e7d44a8be804
+		sourceLineageTag: 3d7adc6b-1fc7-45ce-9e63-b306775cd41e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: planting_year
+
+		annotation SummarizationSetBy = User
+
+	column project_wave
+		dataType: string
+		lineageTag: b958caa8-b702-4583-a6ca-a2c27605c9fc
+		sourceLineageTag: ac7b09ee-0a03-4a95-90bb-3880ef91ccf6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: project_wave
+
+		annotation SummarizationSetBy = User
+
+	column subproject_wave
+		dataType: string
+		lineageTag: 4242442e-5cf9-450a-b710-638cf677df60
+		sourceLineageTag: 43c8436b-68d6-491f-a668-1c61acc8f348
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subproject_wave
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_subprojectwaves = entity
+		mode: directQuery
+		source
+			entityName: Dim_subprojectwaves
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

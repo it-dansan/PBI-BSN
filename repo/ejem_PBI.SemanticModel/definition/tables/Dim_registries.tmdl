@@ -1,0 +1,42 @@
+table Dim_registries
+	lineageTag: d369bfb2-97ea-4ad8-94e4-5f2da088e466
+	sourceLineageTag: b4632b7b-7581-4ce2-bfb9-45b1eb9c4ebc
+
+	column registry_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 6a25dffe-5566-40b1-acfb-cc04c5f3bf6b
+		sourceLineageTag: 3e211948-9e5b-4d01-b499-7a242ab9bcae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_order
+		dataType: int64
+		lineageTag: b7071881-663d-4692-baf6-d0a9a78b7615
+		sourceLineageTag: 84c2944b-4c30-4790-961a-2bc8d26a1472
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_order
+
+		annotation SummarizationSetBy = User
+
+	column registry_type
+		dataType: string
+		lineageTag: 1d00b2d8-d054-44ae-a5b3-7c4b8ccf6a8e
+		sourceLineageTag: b298b253-bf07-4c6c-b3d8-84accd9a360c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_type
+		sortByColumn: registry_order
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_registries = entity
+		mode: directQuery
+		source
+			entityName: Dim_registries
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

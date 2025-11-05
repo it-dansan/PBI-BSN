@@ -1,0 +1,31 @@
+table Dim_parcel_maintenances
+	lineageTag: 51f9a835-12ef-4fcf-af6d-60138ba0d281
+	sourceLineageTag: 1e5f559b-f5c6-4b02-b0c3-fe12cac63e3f
+
+	column parcel_maintenance_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 4e90874d-b0d4-4fa5-ac89-eb6c0700fa86
+		sourceLineageTag: 1921ff56-4fad-49e4-8e90-35afe75b836a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_maintenance_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_maintenance
+		dataType: string
+		lineageTag: ccd45b54-60fa-409e-9c69-52553bb71147
+		sourceLineageTag: ac4e188c-0fa4-4a7a-9178-72b22d3a331a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_maintenance
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_parcel_maintenances = entity
+		mode: directQuery
+		source
+			entityName: Dim_parcel_maintenances
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

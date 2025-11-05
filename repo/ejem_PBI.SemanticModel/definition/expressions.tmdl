@@ -1,0 +1,11 @@
+expression 'DirectQuery à AS – Golden_field_dataset' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Golden%20datasets", "Golden_field_dataset"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: c6fc9ec5-b84a-4b1e-a507-535924101aaa
+
+	annotation PBI_IncludeFutureArtifacts = True
+

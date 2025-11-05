@@ -1,0 +1,30 @@
+table Fact_farmer_contract_remembers
+	lineageTag: d39b6a2e-9660-4bdc-8473-8c72218225f4
+	sourceLineageTag: f5e7dcf6-025c-4ec9-8651-c63af30be0e8
+
+	column contract_id
+		dataType: double
+		lineageTag: 5ad54d34-b43b-4d23-abb9-2e98cea54929
+		sourceLineageTag: 517e9e26-22e3-4f2a-a05c-85656b34334e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: contract_id
+
+		annotation SummarizationSetBy = User
+
+	column contract_remember_type
+		dataType: string
+		lineageTag: 0542861b-70a9-4a8d-90ba-a1852f261608
+		sourceLineageTag: 0fe8ec0e-e89b-466b-b3dc-beaf39439b7c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: contract_remember_type
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_contract_remembers = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_contract_remembers
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

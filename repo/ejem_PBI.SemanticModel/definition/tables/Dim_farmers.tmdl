@@ -1,0 +1,244 @@
+table Dim_farmers
+	lineageTag: 4678c44b-4ce7-4c83-b58d-2e6ae5c8994d
+	sourceLineageTag: ed308c32-b4b7-4218-b3c4-6cf1ead2cd87
+
+	column id_farmer
+		dataType: int64
+		isNullable: false
+		lineageTag: a193492c-7622-4cac-abf5-525370611b1d
+		sourceLineageTag: 11efb086-cb07-4faf-8892-61be24268af4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column last_loading_time
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 6e6db2ea-aa17-4bfb-bf80-1889011e9565
+		sourceLineageTag: fef4acf4-f58e-48b0-ab95-861ad6c96f12
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: last_loading_time
+
+		annotation SummarizationSetBy = User
+
+	column farmer_name
+		dataType: string
+		lineageTag: 1d443ef4-a435-4466-bf02-e88e94248a8a
+		sourceLineageTag: d70e83e3-1b3b-47e2-8e8a-e715e447b496
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_name
+
+		annotation SummarizationSetBy = User
+
+	column farmer_gender
+		dataType: string
+		lineageTag: 007f2841-44d1-49ee-9adf-0c97be425d35
+		sourceLineageTag: d40e3941-ea8f-4513-8113-13f51a6e3d9d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_gender
+
+		annotation SummarizationSetBy = User
+
+	column farmer_age
+		dataType: int64
+		lineageTag: dda05a2c-e431-47c5-8275-590174e3f535
+		sourceLineageTag: d68da980-4c01-49ac-8d9b-de15d86dba6c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: farmer_age
+
+		annotation SummarizationSetBy = User
+
+	column farmer_has_pur_experience
+		dataType: string
+		lineageTag: 600edcb8-945b-42c1-bb0d-8fb6745b2847
+		sourceLineageTag: 179c542f-ad07-4493-a2a8-f1a6df5ab75a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_has_pur_experience
+
+		annotation SummarizationSetBy = User
+
+	column farmer_nb_people_household
+		dataType: double
+		lineageTag: 98366631-f47b-46c9-a06d-02b7f96d4b03
+		sourceLineageTag: 826770aa-6653-4d58-9c7b-31e67fc16c05
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: farmer_nb_people_household
+
+		annotation SummarizationSetBy = User
+
+	column farmer_total_area_land_cluster
+		dataType: string
+		lineageTag: 8a54715c-21a2-4b6f-a5e8-6de4f6c91642
+		sourceLineageTag: 317f7db3-d6bd-40a3-9d60-2d7b5f11fa76
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_total_area_land_cluster
+
+		annotation SummarizationSetBy = User
+
+	column farmer_entry_registry
+		dataType: string
+		lineageTag: c843489a-eb49-48c0-bcfd-0bc08963bc5f
+		sourceLineageTag: f5b1ec51-bc86-432c-9dd6-16f92d727adc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_entry_registry
+
+		annotation SummarizationSetBy = User
+
+	column farmer_identity_card_id
+		dataType: string
+		lineageTag: 9b4b50ee-f850-4bf1-8d0f-f4d3bac3818e
+		sourceLineageTag: d9113c7b-b81c-4748-a5c2-5495029bfda7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_identity_card_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_member_number
+		dataType: string
+		lineageTag: 02cb716a-4282-4340-a105-9f73dd35cd26
+		sourceLineageTag: 0d424723-6844-4be1-8ba5-a1add050543c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_member_number
+
+		annotation SummarizationSetBy = User
+
+	column farmer_id_type
+		dataType: string
+		lineageTag: d9d5cbee-c95a-4375-8358-d5e7369ea34e
+		sourceLineageTag: a77acf6b-e8ee-47f6-bbd5-c553108c6f51
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_id_type
+
+		annotation SummarizationSetBy = User
+
+	column farmer_phone_number
+		dataType: string
+		lineageTag: 55c4f5e8-2516-42cf-964c-0a1d6173ef8d
+		sourceLineageTag: d99fe220-14e6-4920-ae55-415fb5d92370
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_phone_number
+
+		annotation SummarizationSetBy = User
+
+	column organization
+		dataType: string
+		lineageTag: 5ea5730e-8413-4849-a812-f8f7c853bb07
+		sourceLineageTag: 51aa2ec6-9596-4f6f-9648-0e5102913d30
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: organization
+
+		annotation SummarizationSetBy = User
+
+	column location_level_1
+		dataType: string
+		lineageTag: da76d2f4-1f13-432d-afff-bcde73559e35
+		sourceLineageTag: 12045f5f-8c60-4166-9c31-8da74695a5b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: location_level_1
+
+		annotation SummarizationSetBy = User
+
+	column location_level_2
+		dataType: string
+		lineageTag: 3964b169-c2c6-498c-b781-bbc33ba4aaac
+		sourceLineageTag: 58159164-7a34-4008-8d45-9e8ddba77491
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: location_level_2
+
+		annotation SummarizationSetBy = User
+
+	column location_level_3
+		dataType: string
+		lineageTag: 8fb7f872-8a22-4bb2-9af1-44a8865b6c73
+		sourceLineageTag: c8c40a3b-a9c5-4c7d-8d2c-6c2a9f2ebc19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: location_level_3
+
+		annotation SummarizationSetBy = User
+
+	column location_level_4
+		dataType: string
+		lineageTag: ff1264cd-2516-45b3-aa00-811da3756ce9
+		sourceLineageTag: 6825c6ad-6462-4b4e-98ed-e0b6703ebddd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: location_level_4
+
+		annotation SummarizationSetBy = User
+
+	column farmer_is_from_hd
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ac5e138d-f89c-4e55-bb91-711a8a77c58a
+		sourceLineageTag: 19955593-106d-4579-969d-777780d5b9f5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_is_from_hd
+
+		annotation SummarizationSetBy = User
+
+	column nb_species
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c35592e-1720-4ae9-bcd2-9bc7afa145c8
+		sourceLineageTag: c46fd668-642c-4e1c-aa48-40898cbcf1f7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_species
+
+		annotation SummarizationSetBy = User
+
+	column organization_change_reason
+		dataType: string
+		lineageTag: 627bdfcf-9f29-4513-be50-9043aeae7652
+		sourceLineageTag: 35601bc4-07c2-41cc-b4df-3424f41a725a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: organization_change_reason
+
+		annotation SummarizationSetBy = User
+
+	column farmer_code
+		dataType: string
+		lineageTag: 349968ac-dc14-4b38-a8fd-9f9d36b2958f
+		sourceLineageTag: 3f1c2062-f275-42c9-881a-58cc61e70e95
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_code
+
+		annotation SummarizationSetBy = User
+
+	column nespresso_cluster
+		dataType: string
+		lineageTag: 71949d87-19ae-40b0-ab99-42af54481a62
+		sourceLineageTag: 2dbb43c1-e099-47fb-9015-e7afe92d9e99
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: nespresso_cluster
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_farmers = entity
+		mode: directQuery
+		source
+			entityName: Dim_farmers
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,80 @@
+table Fact_parcel_mortality_causes
+	lineageTag: 5a1ffca3-0a6f-4cf5-88fc-515fc3640949
+	sourceLineageTag: 4cbb7b93-c3d6-4d6f-b238-402c784407d9
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: 8aca5751-9117-4487-b11a-687fd469dbf4
+		sourceLineageTag: 30ddfd81-6cd2-454b-bbb7-1ddcbe3e73bc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_id
+		dataType: int64
+		lineageTag: 69c24d06-d6b8-4db9-ab4b-7690361f19b2
+		sourceLineageTag: 5664fda2-3f08-493e-95da-6b2edecfc559
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 24df273c-bd68-4dc3-be3e-4fac09787588
+		sourceLineageTag: 58f5ab1a-5c4e-4ca2-891b-2436ce3405b6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_mortality_cause_id
+		dataType: int64
+		lineageTag: 0f5f6953-527b-4f3f-9dd9-a47eaaf5ac48
+		sourceLineageTag: e189f06d-e0c3-4094-a749-542d7b3ea756
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_mortality_cause_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: f086b0bf-8048-41cb-b373-579b7f5cd924
+		sourceLineageTag: a4486a14-6a7d-4a3c-bc2b-0451f0c1b446
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 9b1d3e3f-5058-4c34-a452-0597f4dd22ac
+		sourceLineageTag: 8aa7547b-2e53-4cf3-a429-2a23e0f03af7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: e551b490-594f-442f-b646-dedb185ce96c
+		sourceLineageTag: 36c1d7b7-cf4e-43db-9573-a34e386b8426
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_parcel_mortality_causes = entity
+		mode: directQuery
+		source
+			entityName: Fact_parcel_mortality_causes
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

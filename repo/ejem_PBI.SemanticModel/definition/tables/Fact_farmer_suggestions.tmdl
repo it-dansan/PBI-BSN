@@ -1,0 +1,70 @@
+table Fact_farmer_suggestions
+	lineageTag: 6da5af9f-5b94-46b3-9224-fd73068ae762
+	sourceLineageTag: 69773e70-4983-472d-8144-16e8cbd3f4a5
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: e768bf8b-81f7-458d-b6ab-3b1c231ad183
+		sourceLineageTag: a4fd1234-497d-42d0-a017-91e6383fc278
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: double
+		lineageTag: 2c0107c1-2c96-432e-b233-d8c2688e4c6d
+		sourceLineageTag: 859045cd-952d-4d01-97d7-c4b9d4925f2a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 0562ce17-5d14-4e05-9fbf-4578cf66fb7c
+		sourceLineageTag: 61658f53-5fd7-4b64-ad44-85a0434c62fb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmer_suggestion_id
+		dataType: double
+		lineageTag: 1b71c822-46bb-42c3-9c47-a963b3397e9d
+		sourceLineageTag: 193b4a87-b71b-408c-8dc8-5e786ad75328
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_suggestion_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: d1d39941-6ae9-4dcb-be10-e57b182dce46
+		sourceLineageTag: 394e2fc9-f893-43e1-a2bd-52ba9f70ef0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: f35cef4b-b742-4ddc-a83d-bd09ed1438bd
+		sourceLineageTag: 2d2d68a6-9ff5-4340-aacc-9096b80959ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_suggestions = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_suggestions
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

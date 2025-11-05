@@ -1,0 +1,107 @@
+table Dim_project_team_data_validation
+	lineageTag: cd4eecd8-c15e-44d7-9ff3-4ae92318be77
+	sourceLineageTag: bc750da9-32c6-4050-adf1-4e9b98646c6b
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: 2376991e-f9da-4f17-8103-be2573a55cb8
+		sourceLineageTag: 910bf0d1-e4c6-469b-8f55-911e62721228
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		isNullable: false
+		lineageTag: 0bbb483d-5b9a-4576-9e40-64820d92514e
+		sourceLineageTag: 983a1619-9002-451f-ae1f-607e6435a6c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column data_validated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 735540ab-c219-4a8b-b2e9-a0627420068e
+		sourceLineageTag: 67faad9d-410f-494b-ad2d-63772328fdf1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: data_validated
+
+		annotation SummarizationSetBy = User
+
+	column data_validated_label
+		dataType: string
+		lineageTag: a570c3fb-24b3-47fd-8231-dc95c843d62d
+		sourceLineageTag: 2a0cbc95-50c6-4da6-b767-42b137d76316
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: data_validated_label
+
+		annotation SummarizationSetBy = User
+
+	column registry_closing_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 9b4ef3b3-e9ae-44bc-aeed-b9bd7c8bd181
+		sourceLineageTag: 8544ac2e-92ba-43fb-aa6c-be04cb0c6fe8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_closing_date
+
+		annotation SummarizationSetBy = User
+
+	column data_validated_binary
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a69f525-fd52-4857-9c5e-df892e8b0150
+		sourceLineageTag: 49d5aba0-47f4-4f83-af57-499e9153180b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: data_validated_binary
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b22223b-64a0-4c20-8f9d-c3f403a572d6
+		sourceLineageTag: f43ab70e-2dd5-431b-ab45-3011ba400f45
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column days_since_last_submission
+		dataType: int64
+		formatString: 0
+		lineageTag: ffbf9f51-7933-4573-a26b-84f89f9f3f14
+		sourceLineageTag: b130e3b6-a824-4845-848d-aaeccbb3b8e0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: days_since_last_submission
+
+		annotation SummarizationSetBy = User
+
+	column last_submission_sent
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: f4027fc8-dca2-4d8c-a8e4-4c117dd90788
+		sourceLineageTag: 1c3e14ed-c901-4629-b3b7-98c4f830c552
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: last_submission_sent
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_project_team_data_validation = entity
+		mode: directQuery
+		source
+			entityName: Dim_project_team_data_validation
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,70 @@
+table Fact_farmer_needs
+	lineageTag: 6640e87d-1462-4899-8ae1-6af52419cb82
+	sourceLineageTag: ef4e16f8-f18e-4714-9062-744ce342be99
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: e264c6dc-c3ec-43ad-bd08-5e9a452a9005
+		sourceLineageTag: 36f48225-31cd-4f1d-b34b-fa2fd0a6a2c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: double
+		lineageTag: 78a6f655-83df-4af1-b923-2f225ac9ff98
+		sourceLineageTag: 5f306555-5b26-481e-acc6-bf2e10ac195a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: d20e64c7-b427-44d7-826f-91f711891c2c
+		sourceLineageTag: 5568e475-287a-408a-8e74-8e12e743a0d2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmer_need_id
+		dataType: double
+		lineageTag: afdd4654-5653-4aef-b461-5b98b6cbaf82
+		sourceLineageTag: 2bd2283a-7a0c-4216-a5b8-e2be540c198b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_need_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 58582f61-85c6-4a34-a0e6-df326f546b18
+		sourceLineageTag: 77b003b4-5871-4d5f-9710-5d9b54ef4a2b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: afb5872e-db55-4868-b92f-1d325bdeef39
+		sourceLineageTag: 989aecab-445e-442e-bc37-c394a10ba16c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_needs = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_needs
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

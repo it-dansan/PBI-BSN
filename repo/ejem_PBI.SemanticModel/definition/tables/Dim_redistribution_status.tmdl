@@ -1,0 +1,32 @@
+table Dim_redistribution_status
+	lineageTag: 4062729c-533c-4a36-9041-dcf2b46d52e9
+	sourceLineageTag: db7918a2-2952-4d6c-b4d8-eb99b668c938
+
+	column redistribution_status_id
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		lineageTag: aa65257a-6d2b-4fd5-ba69-95de0f21d0ea
+		sourceLineageTag: 010af015-010b-4894-aa35-cd82d004edd6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: redistribution_status_id
+
+		annotation SummarizationSetBy = User
+
+	column redistribution_status_label
+		dataType: string
+		lineageTag: 9b7c3712-3662-417e-973b-0e07f46ef82a
+		sourceLineageTag: 9336c766-6754-49c7-abb0-2617c3788e1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: redistribution_status_label
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_redistribution_status = entity
+		mode: directQuery
+		source
+			entityName: Dim_redistribution_status
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

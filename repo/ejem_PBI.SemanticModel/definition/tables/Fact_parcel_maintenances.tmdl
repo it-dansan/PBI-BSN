@@ -1,0 +1,80 @@
+table Fact_parcel_maintenances
+	lineageTag: 119522d7-4b95-4fb9-9131-592c5a19c8c6
+	sourceLineageTag: d7c1fe50-ac72-4aed-ac0d-483e8760c47a
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: f03a8e5e-f199-48d4-9af6-313ae92c1f2f
+		sourceLineageTag: 5388b455-42a6-4bbc-8a2b-fa0eee193d73
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_id
+		dataType: int64
+		lineageTag: cae97355-8d02-4453-9681-b793b32136cb
+		sourceLineageTag: d163bcae-1c83-4e5b-8dee-851569dd24db
+		dataCategory: Uncategorized
+		summarizeBy: count
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 384b2296-0575-4223-9759-64f5052d7d77
+		sourceLineageTag: d0de2a8c-a32a-4fcd-bb55-c0fd7cd8a13b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_maintenance_id
+		dataType: int64
+		lineageTag: 55881620-9f14-4acf-977e-5e2188fe26f6
+		sourceLineageTag: 76f58f5a-e804-4e53-97f8-9aac92e7ee23
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_maintenance_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 2fc2106e-eeb4-4fed-9290-0cf0b8b55e67
+		sourceLineageTag: e4d3d2cf-ad33-4c02-807b-05f3f8d2aa69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 5e389b27-4cc8-4afd-953a-3214a4f62c4f
+		sourceLineageTag: a752f8fb-618e-4880-adcc-7418785e4100
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: 4e699b94-fb78-4ff9-9652-d4c061b117e2
+		sourceLineageTag: 6f6535d7-0009-4a27-83d8-5edd1a891e31
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_parcel_maintenances = entity
+		mode: directQuery
+		source
+			entityName: Fact_parcel_maintenances
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

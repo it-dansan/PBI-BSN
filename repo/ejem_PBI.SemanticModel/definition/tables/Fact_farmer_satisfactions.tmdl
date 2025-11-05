@@ -1,0 +1,131 @@
+table Fact_farmer_satisfactions
+	lineageTag: 09a44b87-e9ff-4005-b926-e7ebf69d6c6b
+	sourceLineageTag: 4dc47c07-7379-4c15-a0f6-110a66a5a85f
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: 4353cf67-6d73-4f5e-87e8-d89f6031cc74
+		sourceLineageTag: 0d5d49e8-10dc-44a7-b6d1-5ffff577e52f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: double
+		lineageTag: 06baeae6-2564-4068-a493-ed41da9e9d0d
+		sourceLineageTag: 57d02a69-f39e-48b9-8978-74ad588d1ec0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 6887bb31-d22b-49b7-8f60-3de3a59e1d45
+		sourceLineageTag: 2abf4228-cd9c-4749-9323-70561b914b37
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_feedback_id
+		dataType: double
+		isHidden
+		lineageTag: 3e4e0d34-272f-42cf-96e4-73862886e10a
+		sourceLineageTag: 3468f6d6-f610-4183-a9f6-2e8da38fd1a7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_feedback_id
+
+		annotation SummarizationSetBy = User
+
+	column sat_diversity_species
+		dataType: string
+		lineageTag: f46b6761-2080-4d09-9aeb-0498dfd816af
+		sourceLineageTag: 4b073037-1e84-4fc4-88d6-262386a91eeb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: sat_diversity_species
+
+		annotation SummarizationSetBy = User
+
+	column sat_of_seedlings_quality
+		dataType: string
+		lineageTag: c2783c07-5ce0-4a6e-aa22-24c25c89d815
+		sourceLineageTag: 5e7337eb-ce37-4a3b-b939-f4590eeddb7f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: sat_of_seedlings_quality
+
+		annotation SummarizationSetBy = User
+
+	column sat_of_model
+		dataType: string
+		lineageTag: 624cff3d-0f26-409d-afde-c8831445a559
+		sourceLineageTag: ea02dfa5-93a5-4799-8745-d2855352576e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: sat_of_model
+
+		annotation SummarizationSetBy = User
+
+	column sat_of_visit
+		dataType: string
+		lineageTag: d59af413-c07c-457a-9f3b-37432a978009
+		sourceLineageTag: ab9e55d0-fe90-44d5-8c98-fc8e43793e08
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: sat_of_visit
+
+		annotation SummarizationSetBy = User
+
+	column sat_of_group_training
+		dataType: string
+		lineageTag: bee15a7f-4a65-40a1-9536-0854da211056
+		sourceLineageTag: 91c2ae80-32cb-43ea-9a0c-bf83845c54ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: sat_of_group_training
+
+		annotation SummarizationSetBy = User
+
+	column sat_of_communication
+		dataType: string
+		lineageTag: 92f2e803-3278-405e-b831-c936359b2e59
+		sourceLineageTag: d5acbee7-c113-4e42-9eaf-6d83ecd1726e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: sat_of_communication
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 93d8d7a9-67ba-4437-b44f-39a48641857c
+		sourceLineageTag: 0ec0860c-4f72-45b9-aff1-2c0d408b6adc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: 9601d093-d0dd-40dd-9b06-bfd6fa533d79
+		sourceLineageTag: 3ed0c179-aec3-4114-9d8f-0594655a4802
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_satisfactions = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_satisfactions
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

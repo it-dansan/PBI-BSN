@@ -1,0 +1,31 @@
+table Dim_farmer_suggestions
+	lineageTag: 51860e3f-cd7a-4940-8b60-3714282e7467
+	sourceLineageTag: 8635d5d0-4e72-4be3-a15d-e4df3b696e13
+
+	column farmer_suggestion_id
+		dataType: double
+		isNullable: false
+		lineageTag: a7adc4ed-f86a-43d9-811c-ab01c42e924e
+		sourceLineageTag: a048b9b6-5664-4644-b423-d129629c7b61
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_suggestion_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_suggestion_type
+		dataType: string
+		lineageTag: 3e2b0242-824f-4e90-821b-13dc5116851f
+		sourceLineageTag: 81a8f0a9-26dd-4679-b382-551eac27bcf2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_suggestion_type
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_farmer_suggestions = entity
+		mode: directQuery
+		source
+			entityName: Dim_farmer_suggestions
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

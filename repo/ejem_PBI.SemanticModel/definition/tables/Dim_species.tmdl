@@ -1,0 +1,41 @@
+table Dim_species
+	lineageTag: d54b8590-1b2a-425f-9584-f2975d3d71b2
+	sourceLineageTag: 8db44f8d-5a92-486d-b94e-ad63b80ad18a
+
+	column species_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 4d409a76-6127-40d6-af33-fc4cc18b043c
+		sourceLineageTag: 9cdaf243-09f5-4d7c-9db8-4e3674bed2b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: species_id
+
+		annotation SummarizationSetBy = User
+
+	column species
+		dataType: string
+		lineageTag: 57b9d896-3a1f-467e-91f8-80dca0273dbe
+		sourceLineageTag: 105586a3-8750-490c-8ab0-2703a3c04006
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: species
+
+		annotation SummarizationSetBy = User
+
+	column species_latin_name
+		dataType: string
+		lineageTag: 84b592c3-c31b-4eba-80e8-9856900e3fb5
+		sourceLineageTag: e2cb5f84-53a5-4d4f-977e-446c94ad2106
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: species_latin_name
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_species = entity
+		mode: directQuery
+		source
+			entityName: Dim_species
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

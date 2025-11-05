@@ -1,0 +1,32 @@
+table Dim_farmer_visit_issues
+	lineageTag: dfeb09b7-8c13-4a3e-9908-c70fea1c754e
+	sourceLineageTag: c11f889d-cab7-49d1-b886-f0e3e31f9bab
+
+	column farmer_visit_issue_id
+		dataType: double
+		isNullable: false
+		lineageTag: 6943a9f6-49d9-4a9f-9b4f-083c86d5f5c5
+		sourceLineageTag: cb2d327f-44b8-4b87-9a8e-5a62c527f296
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_visit_issue
+		dataType: string
+		lineageTag: e36420f3-a51f-4a3e-bcf7-97fec900305f
+		sourceLineageTag: c487fa62-b3e3-42bf-b5d1-bcbca02e5ad3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_visit_issue
+		sortByColumn: farmer_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_farmer_visit_issues = entity
+		mode: directQuery
+		source
+			entityName: Dim_farmer_visit_issues
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

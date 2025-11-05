@@ -1,0 +1,46 @@
+table _Measures_local
+	lineageTag: 9fb62fb2-39bf-4c59-a321-102dc14205f3
+
+	measure 'country dashboard' =
+			
+			CONCATENATE(
+			    SELECTEDVALUE(Dim_subprojectwaves[country], "country"),
+			    " dashboard (end of year 2024)"
+			)
+		lineageTag: 052b8f0b-5fe7-4831-be41-03aaf42aa1cd
+
+	measure 'Percentage of Total Sales' = ```
+			
+			    DIVIDE(
+			        [client's distributed species],
+			        CALCULATE(
+			            [client's distributed species],
+			            ALLEXCEPT(Fact_subprojectwaves_allocations,Fact_subprojectwaves_allocations[client]),
+			            ALLEXCEPT(Dim_subprojectwaves,Dim_subprojectwaves[country],Dim_subprojectwaves[wave]),
+			            ALLEXCEPT(Dim_project_team_data_validation,Dim_project_team_data_validation[data_validated])
+			            )
+			    )
+			```
+		lineageTag: 2c5b1a2c-38c9-4022-9da1-9598b0466b95
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column local
+		dataType: string
+		lineageTag: 21abcec5-a5c7-4f49-bd31-331268895bda
+		summarizeBy: none
+		sourceColumn: local
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures_local = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [local = _t]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"local", type text}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+

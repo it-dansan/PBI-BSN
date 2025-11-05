@@ -1,0 +1,70 @@
+table Fact_farmer_incentives_errors
+	lineageTag: 1efa185c-ce52-4042-9955-a827ee693f99
+	sourceLineageTag: e8054947-bce2-4b31-bfd7-2b88c357cd6d
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: 9cbd5ff1-555c-4887-80d5-ae92e4c4edf5
+		sourceLineageTag: 9bfac5a6-d511-47a7-80a8-f0adf89d36e3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: double
+		lineageTag: 024104de-16e9-49df-8cf7-ac586ff6a8f9
+		sourceLineageTag: 4e37990a-f3b5-4e8a-8171-5926a7909b65
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: df7ee00c-4bb6-4e64-94ff-3984422d257a
+		sourceLineageTag: 0e19eda8-e705-4720-8798-ac71f6e64708
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmer_incentive_error_type
+		dataType: string
+		lineageTag: df426638-d13f-431b-a632-a828aff9468a
+		sourceLineageTag: 1d32404b-2b69-4452-bbb2-bf135e90efb5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_incentive_error_type
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 1bef18dd-b3dc-4d18-a467-c9a9d3144dbd
+		sourceLineageTag: 0bec6853-9b1d-4590-b88d-2829bd62bef4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: fdaf185f-adcf-4bcb-bbe2-1aa95790f6ee
+		sourceLineageTag: 62fae872-ddfc-4280-9ee6-02618eff884e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_incentives_errors = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_incentives_errors
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,53 @@
+table Fact_seedlings_purchase_orders
+	lineageTag: eb3ad2b1-0530-4ab8-a230-03c2ec2bea70
+	sourceLineageTag: c99b8804-1be1-4bfb-b929-2ce058b59d9e
+
+	column subprojectwave_id
+		dataType: double
+		isNullable: false
+		lineageTag: ec716ba6-a047-4545-8d23-c8ac881d9cc9
+		sourceLineageTag: 5f1f57d7-d542-4563-bf5e-c003de7f95ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column first_po
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: eb92b2df-76fc-41fb-9349-2cd79c5cb5de
+		sourceLineageTag: 91ac7711-e018-4490-880d-beb4129dbe61
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: first_po
+
+		annotation SummarizationSetBy = User
+
+	column latest_po
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cb4c6244-e262-42d9-bad1-55293ca8ac0f
+		sourceLineageTag: 06fa8798-c7da-49bf-aae4-5d45da156296
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: latest_po
+
+		annotation SummarizationSetBy = User
+
+	column nb_trees
+		dataType: double
+		lineageTag: 3c11fa23-9733-44d3-ab94-1708d9a8f09d
+		sourceLineageTag: 627ad942-0863-44bb-acf5-2d418039cd89
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_trees
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_seedlings_purchase_orders = entity
+		mode: directQuery
+		source
+			entityName: Fact_seedlings_purchase_orders
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

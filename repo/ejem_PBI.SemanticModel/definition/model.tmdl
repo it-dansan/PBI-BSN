@@ -1,0 +1,68 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-150
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DirectQuery à AS – Golden_field_dataset","_Measures_local","_Dict_local"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Dim_interviewers
+ref table Dim_parcel_maintenances
+ref table Dim_parcel_mortality_causes
+ref table Dim_parcel_recommendations
+ref table Dim_registries
+ref table Dim_species
+ref table Dim_species_mortality_causes
+ref table Dim_subprojectwaves
+ref table Fact_farmer_dead_species
+ref table Fact_parcel_maintenances
+ref table Fact_parcel_mortality_causes
+ref table Fact_parcel_not_relevant_reasons
+ref table Fact_parcel_recommendations
+ref table Fact_parcel_risks
+ref table Fact_technicians_deliveries
+ref table Fact_trees_perfomances
+ref table Dim_farmers
+ref table Dim_parcels
+ref table Dim_calendar
+ref table _Measures_global
+ref table Asso_countries_project_waves
+ref table Fact_project_wave_timeline
+ref table Fact_subproject_wave_timeline
+ref table Asso_famer_prereg_distribruted_trees
+ref table Fact_farmer_suggestions
+ref table Fact_farmer_satisfactions
+ref table Fact_farmer_needs
+ref table Fact_farmer_incentives_improvements
+ref table Fact_farmer_incentives_errors
+ref table Fact_farmer_incentives
+ref table Dim_farmer_needs
+ref table Dim_farmer_suggestions
+ref table Dim_contracts
+ref table Fact_farmer_contract_remembers
+ref table Dim_parcel_visit_issues
+ref table Dim_farmer_visit_issues
+ref table Asso_parcels
+ref table Dim_planting_model_change_reasons
+ref table Fact_subprojectwaves_allocations
+ref table Dim_farmer_satisfactions
+ref table Dim_parcel_crops_displaced_land_types
+ref table Dim_project_team_data_validation
+ref table Dim_states
+ref table Dim_project_team_data_validation_farmer_level
+ref table Fact_timesheets
+ref table Dim_redistribution_status
+ref table _Dict
+ref table _Measures_local
+ref table _Dict_local
+ref table Fact_seedlings_purchase_orders
+ref table _Datapoints
+
+ref cultureInfo fr-FR
+

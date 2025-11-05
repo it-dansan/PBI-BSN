@@ -1,0 +1,31 @@
+table Dim_interviewers
+	lineageTag: 807af87a-ff95-4b8b-82bb-276359352deb
+	sourceLineageTag: 3aa80900-c82c-4bc9-b3a4-b175ce08e6fe
+
+	column interviewer_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 77d5c104-a141-4722-9a11-a05673140c06
+		sourceLineageTag: bbbeefee-3f9e-4719-b379-b7e5d4cfa486
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: interviewer_id
+
+		annotation SummarizationSetBy = User
+
+	column interviewer_name
+		dataType: string
+		lineageTag: e1c0130e-e153-4f40-b910-db15bf44f029
+		sourceLineageTag: bdd9fb59-a1ce-4cec-91c5-ee28e77ae210
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: interviewer_name
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_interviewers = entity
+		mode: directQuery
+		source
+			entityName: Dim_interviewers
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

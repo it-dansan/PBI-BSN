@@ -1,0 +1,82 @@
+table Asso_countries_project_waves
+	lineageTag: 026fb049-65a4-4016-bded-0bb8db0b0df1
+	sourceLineageTag: 2fb64582-6c74-49b1-ae94-5684017934b8
+
+	measure 'Number of local communities affiliated' =
+			
+			CALCULATE(
+			    DISTINCTCOUNTNOBLANK(Dim_farmers[organization]),
+			    CROSSFILTER('Fact_trees_perfomances'[id_farmer], Dim_farmers[id_farmer] , Both))
+		lineageTag: 0c838634-696a-43f5-9e3d-c251eb80f97e
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cumul date year' = CALCULATE(SUM('trees))
+		lineageTag: 161b41a2-a2df-473f-838e-aa17789748ff
+
+		changedProperty = Name
+
+	measure Selectm1monitoredtree = COALESCE([m1 trees progress rate],"XX")
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 02b58a40-a5a6-47bc-ad75-d85913d7c36d
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+	measure Mesure
+		lineageTag: 2a579ad4-a9f8-4374-821b-d97dc3d76d58
+
+		annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":null}
+
+		annotation 277cc1b9-af89-4597-8e15-cacc25c0886b = Pour utiliser des caractères spéciaux dans un nom de mesure, mettez tout le nom entre crochets ( [] ) et ajoutez un ] à tout crochet fermant dans le nom.
+
+	measure 'Rank by Trees' =
+			
+			RANKX(
+			    ALL(Dim_species[species_latin_name]),
+			    [distributed trees],
+			    ,
+			    DESC,
+			    DENSE
+			)
+		formatString: 0
+		lineageTag: 02ea639d-c1a1-41c0-bb1a-2167de151dd1
+
+		changedProperty = Name
+
+	measure Y-axis = 1
+		formatString: 0
+		lineageTag: 99967e88-6880-4fc8-822c-0c246bcd14c8
+
+		changedProperty = Name
+
+	column country
+		dataType: string
+		lineageTag: c8d24ce3-24d0-4c5a-a9d1-57c01b5516b0
+		sourceLineageTag: 832a809e-dee5-49c6-9587-d1c744a14f24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = User
+
+	column project_wave
+		dataType: string
+		isNullable: false
+		lineageTag: 6dc01b27-0ed8-482d-b208-3f6a2e4c4952
+		sourceLineageTag: fea41061-981c-42bc-9d15-032384503ffd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: project_wave
+
+		annotation SummarizationSetBy = User
+
+	partition Asso_countries_project_waves = entity
+		mode: directQuery
+		source
+			entityName: Asso_countries_project_waves
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

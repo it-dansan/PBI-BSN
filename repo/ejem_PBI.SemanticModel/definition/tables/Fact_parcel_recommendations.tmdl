@@ -1,0 +1,80 @@
+table Fact_parcel_recommendations
+	lineageTag: 6fd67d08-63f7-4402-944e-f26656316b29
+	sourceLineageTag: ea442925-0324-4a36-97cb-1f2f8585a38b
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: 4693e01d-2821-439b-b7c5-52944c8c70c9
+		sourceLineageTag: 83eb4d71-bfd2-4210-b85a-b19670e31a01
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_id
+		dataType: int64
+		lineageTag: 40b1a799-a2ef-43ba-aa69-787d2a5231f0
+		sourceLineageTag: ec4decb8-aea5-4fa1-b726-07bec78ceacf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 184b4c9c-e230-4e9e-93f7-f3e107dfcedd
+		sourceLineageTag: aa9f5b8b-ae11-4e33-85ce-c45b0fa7390c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_recommendation_id
+		dataType: int64
+		lineageTag: 47507558-ec29-43a4-80c6-a9e95c7b0b46
+		sourceLineageTag: a4ec2288-cdd8-46bb-bef1-b7bfbdeb66de
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_recommendation_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: f29bf168-3217-442b-b3cb-9293dafd684a
+		sourceLineageTag: d04e1901-9877-4500-8ded-c95fe1cc8bde
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 666dc291-205b-4bb3-918e-9baac2050af0
+		sourceLineageTag: 274de74e-f530-42a8-8731-6f75d96eff0f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: cf2dfef0-2eab-49f0-a476-a285a7d02c4c
+		sourceLineageTag: 2739352c-0813-4a32-bfc0-06491d90966a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_parcel_recommendations = entity
+		mode: directQuery
+		source
+			entityName: Fact_parcel_recommendations
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

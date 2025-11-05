@@ -1,0 +1,31 @@
+table Asso_parcels
+	lineageTag: 08cb652c-1bbf-4692-9002-74ca03927a42
+	sourceLineageTag: 9e638e37-4ee5-400d-a511-b5d6b2bbd696
+
+	column parcel_id
+		dataType: double
+		isNullable: false
+		lineageTag: 1fd20efd-cd44-4edd-83fa-5e825db82e08
+		sourceLineageTag: 8aee6268-63c2-46df-88d1-5f047fa34f96
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_area_ha_est
+		dataType: double
+		lineageTag: 4914d3b0-9fce-41ef-9a46-7242de7603ba
+		sourceLineageTag: 17f27963-7b07-4bea-9690-c2c7406a8f57
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_area_ha_est
+
+		annotation SummarizationSetBy = User
+
+	partition Asso_parcels = entity
+		mode: directQuery
+		source
+			entityName: Asso_parcels
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,292 @@
+table Fact_trees_perfomances
+	lineageTag: e3d0d5f6-57ea-4e69-b58d-cc1af903baa8
+	sourceLineageTag: 1ac7ca0e-9369-4152-8d15-998ee12329d9
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: 74dc04c4-631f-419e-8c7f-5fbcfea645e8
+		sourceLineageTag: 6b50cdb3-6ef4-4953-9955-b22f41ea766a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: int64
+		lineageTag: 2eada4cd-ccc1-4dfe-848b-ac588e78854a
+		sourceLineageTag: 45ae73fd-021c-4fa9-99dc-276f0e34c2fe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmer_is_from_hd
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 15c4054a-af7e-472b-9edc-5c2b8822666b
+		sourceLineageTag: e139a349-5dc2-4e68-b7c8-627a1de96ccf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_is_from_hd
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 5ccab2a0-2bb5-4dc9-ba93-092820d3f105
+		sourceLineageTag: b44fdb64-41d0-4b9b-b925-7aaf7d5c0827
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_id
+		dataType: int64
+		lineageTag: 9095bc0b-e7d6-457e-ad41-9f4b15c707fb
+		sourceLineageTag: 36466965-3db4-4c4d-ba65-dbb64d4b132e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column visit_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 24dce0ba-3771-4275-9430-42a17765e468
+		sourceLineageTag: 3ad46a87-9c82-45e2-a61c-1fe7ac29e342
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: visit_date
+
+		annotation SummarizationSetBy = User
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Fact_trees_perfomances","TableItemName":"visit_date (compartiments)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column interviewer_id
+		dataType: int64
+		lineageTag: cb9d601a-9ae1-4b28-b76b-29c12463b318
+		sourceLineageTag: 91539c5c-286d-4efb-bdd2-74961b90c8e1
+		dataCategory: Uncategorized
+		summarizeBy: distinctCount
+		sourceColumn: interviewer_id
+
+		annotation SummarizationSetBy = User
+
+	column koboformsubmission_id
+		dataType: string
+		lineageTag: a535875d-17e2-4c1e-93d5-c4c29d23f3a8
+		sourceLineageTag: 3d19f0a1-7792-4c96-921a-625deaa895ba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: koboformsubmission_id
+
+		annotation SummarizationSetBy = User
+
+	column tree_density
+		dataType: double
+		lineageTag: a634328c-f043-486a-8e42-41139c92c9b9
+		sourceLineageTag: e1113442-a75c-4a7b-8aff-bd18df60474b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: tree_density
+
+		annotation SummarizationSetBy = User
+
+	column planting_model
+		dataType: string
+		lineageTag: 26db35c0-007b-4932-bd58-0b3382b918b9
+		sourceLineageTag: 3a90f9b5-cbaa-4f95-a98e-c7f02a2d3a69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: planting_model
+
+		annotation SummarizationSetBy = User
+
+	column species_id
+		dataType: int64
+		lineageTag: 4d1db6a2-3aa0-4b61-bd0f-965e25fa27cd
+		sourceLineageTag: 28510433-2007-4423-a1a3-b9a7c9295fcc
+		dataCategory: Uncategorized
+		summarizeBy: distinctCount
+		sourceColumn: species_id
+
+		annotation SummarizationSetBy = User
+
+	column state_id
+		dataType: int64
+		lineageTag: a8fed16d-ac23-439f-bf32-3b18ea6c583d
+		sourceLineageTag: 65012db0-8288-44ae-8935-3a41c48802b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: state_id
+
+		annotation SummarizationSetBy = User
+
+	column nb_trees
+		dataType: int64
+		formatString: #,0
+		lineageTag: 63a46c48-ff72-4bdb-a2d6-8a7a490385b2
+		sourceLineageTag: 5b48a447-c08c-4799-848e-8fecad8176f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_trees
+
+		annotation SummarizationSetBy = User
+
+	column farmer_visit_issue_id
+		dataType: double
+		lineageTag: 5760871d-27f6-471e-99ec-0b40334172ca
+		sourceLineageTag: ac39f5d2-d019-4694-8fa6-68e2f2c33160
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_visit_issue_id
+		dataType: double
+		lineageTag: bf742d82-7335-4c5c-ac5e-c5950d3bb50c
+		sourceLineageTag: 01ddcba3-30e6-45ef-a1d6-ca061519823f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_has_tree_displaced_crops
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c28d8773-f7a4-469c-adf7-fe90b5773ec3
+		sourceLineageTag: fff1b767-227f-4465-b9c3-ce3412ccbcc8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_has_tree_displaced_crops
+
+		annotation SummarizationSetBy = User
+
+	column parcel_crops_displaced_land_type_id
+		dataType: double
+		lineageTag: 079bbf74-7c75-4f09-a91e-7b8b75f63211
+		sourceLineageTag: 59d6af26-8c78-41e6-a3f3-b2e76f91c9ec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_crops_displaced_land_type_id
+
+		annotation SummarizationSetBy = User
+
+	column reason_change_planting_model_id
+		dataType: double
+		lineageTag: 54e529f1-ff7b-40a4-a90c-66e6d25c0c0b
+		sourceLineageTag: 7b1ef12a-f47c-49c3-bebe-68166661669a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: reason_change_planting_model_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 23ebf7c8-e780-408a-bc6e-e1cfec469138
+		sourceLineageTag: 7ff68864-3d24-4d90-ab57-76681148f261
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	/// technical field
+	column id_farmer_subprojectwave
+		dataType: string
+		isHidden
+		lineageTag: b14a52f3-e1f4-4ed2-b958-3687b30eb236
+		sourceLineageTag: 272f89ca-2738-43da-9dae-cd6891a21961
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer_subprojectwave
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: int64
+		lineageTag: 8f51f8a1-b066-4c1a-b344-0c2c7705989e
+		sourceLineageTag: 805e8ce5-67ea-4e77-8695-25bb069f367c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	column kobosubmission_sent_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 91f9cc99-adea-4821-a268-b901417cfde3
+		sourceLineageTag: f2612d94-e22a-4662-89ac-5917613acea6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: kobosubmission_sent_date
+
+		annotation SummarizationSetBy = User
+
+	column redistribution_status_id
+		dataType: int64
+		lineageTag: b38e1965-c37a-401c-8f51-904173a71f8c
+		sourceLineageTag: d09b83b2-5ada-4901-b904-823ed2b1f46c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: redistribution_status_id
+
+		annotation SummarizationSetBy = User
+
+	column 'visit_date (compartiments)' =
+			IF(
+				ISBLANK('Fact_trees_perfomances'[visit_date]),
+				BLANK(),
+				DATE(
+					YEAR('Fact_trees_perfomances'[visit_date]),
+					1 + (MONTH('Fact_trees_perfomances'[visit_date]) - 1),
+					1
+				)
+			)
+		formatString: mmmm yyyy
+		lineageTag: 337c203f-dc48-409b-abad-78984e7259fe
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Fact_trees_perfomances"
+				          }
+				        },
+				        "Property": "visit_date"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 1.0,
+				      "unit": 6
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"f","Entity":"Fact_trees_perfomances"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"f"}},"Property":"visit_date"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"f"}},"Property":"visit_date"}},"Size":1.0,"TimeUnit":2}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	partition Fact_trees_perfomances = entity
+		mode: directQuery
+		source
+			entityName: Fact_trees_perfomances
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

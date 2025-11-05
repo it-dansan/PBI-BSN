@@ -1,0 +1,62 @@
+table _Datapoints
+	lineageTag: 32616d40-6744-46f2-9f08-4388d2f51ae6
+	sourceLineageTag: 314c283a-7fd2-4057-a8e2-0d83fc33e97c
+
+	column [ID]
+		dataType: int64
+		formatString: 0
+		lineageTag: 6beabbed-6eb5-443f-97b6-70894b71c1d1
+		sourceLineageTag: b798e404-7268-4318-80c0-5ca7dcd94647
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: [ID]
+
+		annotation SummarizationSetBy = User
+
+	column [Datapoint]
+		dataType: string
+		lineageTag: 3c7b7746-83ed-4f24-82af-fff65c108408
+		sourceLineageTag: f67cc54b-ffd6-4998-b5c5-912d78440772
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: [Datapoint]
+
+		annotation SummarizationSetBy = User
+
+	column [Table]
+		dataType: string
+		lineageTag: 6f06d9d7-f065-491e-a6f4-54928f1baf96
+		sourceLineageTag: c249ca74-dad6-457f-baf5-9e9d2acd7ab8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: [Table]
+
+		annotation SummarizationSetBy = User
+
+	column [Caracteristic]
+		dataType: string
+		lineageTag: d8aa0cd6-8680-4906-a3e5-c20db61d73ef
+		sourceLineageTag: ad7d634c-b875-4aaf-bc2e-d5a0d3a5f96d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: [Caracteristic]
+
+		annotation SummarizationSetBy = User
+
+	column [Unicity]
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c4354912-415d-4a43-afbc-43c396955a11
+		sourceLineageTag: 6726fa30-3a65-41dc-8ebd-4454b6ab7af6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: [Unicity]
+
+		annotation SummarizationSetBy = User
+
+	partition _Datapoints = entity
+		mode: directQuery
+		source
+			entityName: _Datapoints
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

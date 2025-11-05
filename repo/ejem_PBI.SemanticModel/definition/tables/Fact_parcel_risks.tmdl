@@ -1,0 +1,30 @@
+table Fact_parcel_risks
+	lineageTag: 15d0fa14-1935-4650-b3bb-ae64e9e8adda
+	sourceLineageTag: 32379503-83cd-4685-b02a-1150ba5b9f18
+
+	column parcel_id
+		dataType: int64
+		lineageTag: c67471eb-fb4c-4345-9a07-4683d10c4ba2
+		sourceLineageTag: f39ce925-ac4e-46e2-b935-990dd3cb0b98
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_risk
+		dataType: string
+		lineageTag: fa5e5de6-5183-4c91-b449-43d3587707a6
+		sourceLineageTag: 38cec925-ccc6-4618-9a2a-980383044d89
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_risk
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_parcel_risks = entity
+		mode: directQuery
+		source
+			entityName: Fact_parcel_risks
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

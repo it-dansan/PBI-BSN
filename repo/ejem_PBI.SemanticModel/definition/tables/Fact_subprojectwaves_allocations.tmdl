@@ -1,0 +1,53 @@
+table Fact_subprojectwaves_allocations
+	lineageTag: da09a3b7-6904-4079-997a-9d2944e932aa
+	sourceLineageTag: ab1fb91a-5245-4304-b344-60cca16e4683
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: d551cccd-46af-44af-a53c-9b23b47b4d18
+		sourceLineageTag: 9b178ade-9f99-45e4-8f9e-6b9acfdaa5af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column client
+		dataType: string
+		lineageTag: b7dbd5a2-3df0-4b7d-963f-68ec42a5eee7
+		sourceLineageTag: df77bfd1-f218-472d-a228-abbbad6c85b3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: client
+
+		annotation SummarizationSetBy = User
+
+	column allocation_ratio
+		dataType: double
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 2c81db06-6a6e-4805-b2bc-427a880bff33
+		sourceLineageTag: 73c7e1af-9a22-48ec-8f29-1ca1a562bc7a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: allocation_ratio
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = User
+
+	column allocation_source
+		dataType: string
+		lineageTag: 49ab587d-bd74-4d1d-819a-8329a21119f3
+		sourceLineageTag: 8bbb3346-224f-44e0-8193-3b7c0b25c9a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: allocation_source
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_subprojectwaves_allocations = entity
+		mode: directQuery
+		source
+			entityName: Fact_subprojectwaves_allocations
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

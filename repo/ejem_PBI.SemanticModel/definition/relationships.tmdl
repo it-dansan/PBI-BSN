@@ -1,0 +1,295 @@
+relationship c11708a5-a8b2-4777-83f8-89245aec08a9
+	crossFilteringBehavior: bothDirections
+	fromColumn: Dim_subprojectwaves.project_wave
+	toColumn: Asso_countries_project_waves.project_wave
+
+relationship e17b5112-4a51-4f99-8f7e-6c259346ee30
+	fromColumn: Fact_farmer_dead_species.species_id
+	toColumn: Dim_species.species_id
+
+relationship 0de13248-53a8-45b3-90d4-df58b683ee3a
+	fromColumn: Fact_farmer_dead_species.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 5bbb07e7-d3bd-48b1-bc1d-bc445d18c575
+	fromColumn: Fact_farmer_dead_species.species_mortalitycause_id
+	toColumn: Dim_species_mortality_causes.species_mortalitycause_id
+
+relationship a9f0e1b7-33ff-489b-9bbe-a9ca88e0d4c2
+	fromColumn: Fact_farmer_dead_species.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship 0a4f8e1c-5f54-4d40-90bb-d50c0a3c31fc
+	fromColumn: Fact_farmer_dead_species.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 50e545ce-3866-4e44-b6ba-239c41bac6a3
+	fromColumn: Fact_parcel_maintenances.parcel_id
+	toColumn: Dim_parcels.parcel_id
+
+relationship 482784e9-2618-43dd-9434-4f5f22ba4898
+	fromColumn: Fact_parcel_maintenances.parcel_maintenance_id
+	toColumn: Dim_parcel_maintenances.parcel_maintenance_id
+
+relationship 163e23bb-d4a0-4573-8d1a-c28ff04fa6d6
+	fromColumn: Fact_parcel_maintenances.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship f45ee362-f83c-40b5-9ce6-2f8e8694c9ca
+	fromColumn: Fact_parcel_maintenances.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 1d4d5752-3614-4af9-99db-7c6500af68d3
+	fromColumn: Fact_parcel_maintenances.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 3971fe8a-ec59-4fff-9de6-286fe75ae7f8
+	fromColumn: Fact_parcel_mortality_causes.parcel_mortality_cause_id
+	toColumn: Dim_parcel_mortality_causes.parcel_mortality_cause_id
+
+relationship 7deea17b-d60a-4237-8d69-830c27dfcf9e
+	fromColumn: Fact_parcel_mortality_causes.parcel_id
+	toColumn: Dim_parcels.parcel_id
+
+relationship 3970930e-d890-4dac-867b-e2928145ae47
+	fromColumn: Fact_parcel_mortality_causes.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship 018e4f5b-89e2-4343-8a05-382a1f411013
+	fromColumn: Fact_parcel_mortality_causes.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 33aaaa0e-0d43-48c8-9f29-d0ee68672048
+	fromColumn: Fact_parcel_mortality_causes.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 6e9dd71b-d1a8-4a5a-b9dc-190f088e0271
+	fromColumn: Fact_parcel_not_relevant_reasons.parcel_id
+	toColumn: Dim_parcels.parcel_id
+
+relationship 9c900fe1-359c-43d4-87f1-021b39c2f912
+	fromColumn: Fact_parcel_recommendations.parcel_recommendation_id
+	toColumn: Dim_parcel_recommendations.parcel_recommendation_id
+
+relationship df3de96b-cd29-428c-b4a4-e14678872b09
+	fromColumn: Fact_parcel_recommendations.parcel_id
+	toColumn: Dim_parcels.parcel_id
+
+relationship a3de2d1a-6cbf-41a5-a856-cc70f632a5af
+	fromColumn: Fact_parcel_recommendations.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship 08596b18-a401-4d08-b293-bb5107d1b152
+	fromColumn: Fact_parcel_recommendations.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 2254de24-8deb-49e1-b87f-b3c85d161d2f
+	fromColumn: Fact_parcel_recommendations.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 1a33c11f-40aa-4bfb-92a4-aaab250e7b88
+	fromColumn: Fact_parcel_risks.parcel_id
+	toColumn: Dim_parcels.parcel_id
+
+relationship 60cef3be-af17-4272-bb00-b442dfc3786e
+	isActive: false
+	fromColumn: Fact_technicians_deliveries.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+
+relationship 37f6f9d7-933f-495d-a7ce-d5db4417029d
+	fromColumn: Fact_trees_perfomances.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 7eb63c4d-906c-45d6-8822-3b8b3fb910b0
+	crossFilteringBehavior: bothDirections
+	fromColumn: Fact_trees_perfomances.parcel_id
+	toColumn: Dim_parcels.parcel_id
+
+relationship 3705b73e-66f0-4040-8e0a-79c37a06fc71
+	fromColumn: Fact_trees_perfomances.species_id
+	toColumn: Dim_species.species_id
+
+relationship c00506c1-06e8-47a6-8a07-473705de84a9
+	fromColumn: Fact_trees_perfomances.interviewer_id
+	toColumn: Dim_interviewers.interviewer_id
+
+relationship f0f4a7bf-48b3-4f4f-98c5-ebe1af4a599f
+	fromColumn: Fact_trees_perfomances.farmer_visit_issue_id
+	toColumn: Dim_farmer_visit_issues.farmer_visit_issue_id
+
+relationship 00578d68-f706-4e29-bd34-f01e4705bdb2
+	fromColumn: Fact_trees_perfomances.parcel_visit_issue_id
+	toColumn: Dim_parcel_visit_issues.parcel_visit_issue_id
+
+relationship c68a129d-b798-4a5a-bc67-7d5e1bd83f50
+	fromColumn: Fact_trees_perfomances.reason_change_planting_model_id
+	toColumn: Dim_planting_model_change_reasons.reason_change_planting_model_id
+
+relationship 537b8fc6-7d81-4204-bd52-c3efb199f241
+	fromColumn: Fact_trees_perfomances.parcel_crops_displaced_land_type_id
+	toColumn: Dim_parcel_crops_displaced_land_types.parcel_crops_displaced_land_type_id
+
+relationship 792e7fd7-1e77-41e8-b535-33d172882fc6
+	fromColumn: Fact_trees_perfomances.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship 07082851-33e4-49c5-90e4-5163809155f5
+	fromColumn: Fact_trees_perfomances.visit_date
+	toColumn: Dim_calendar.Date
+
+relationship 1f67c495-3414-40fd-bfe3-f956c4c65b2c
+	fromColumn: Fact_trees_perfomances.state_id
+	toColumn: Dim_states.state_id
+
+relationship fa8bd54a-6158-42e3-8f9f-0e47b57119f2
+	fromColumn: Fact_trees_perfomances.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 45c4cb08-74c1-417e-8c19-68f52507c7a5
+	isActive: false
+	fromColumn: Fact_trees_perfomances.kobosubmission_sent_date
+	toColumn: Dim_calendar.Date
+
+relationship e11e9d5b-da21-411f-8646-cab18e70284b
+	fromColumn: Fact_trees_perfomances.redistribution_status_id
+	toColumn: Dim_redistribution_status.redistribution_status_id
+
+relationship 1f947136-e05a-4344-abeb-3cd5f3e0588e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Dim_parcels.parcel_id
+	toColumn: Asso_parcels.parcel_id
+
+relationship d8d60fb3-4856-4bbd-9869-64f962641ae9
+	fromColumn: Fact_project_wave_timeline.project_wave
+	toColumn: Asso_countries_project_waves.project_wave
+
+relationship 43c7c689-1393-4542-932a-d445fcad6c9f
+	fromColumn: Fact_project_wave_timeline.registry_id
+	toColumn: Dim_registries.registry_id
+
+relationship a68f05e4-6ead-4495-a0c9-0ffb28989a74
+	fromColumn: Fact_subproject_wave_timeline.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+
+relationship d93acbfd-aa6e-4faf-872a-96593a14780d
+	fromColumn: Fact_subproject_wave_timeline.registry_id
+	toColumn: Dim_registries.registry_id
+
+relationship fcb2c800-28bc-4778-9d48-8ef8e7676baa
+	fromColumn: Asso_famer_prereg_distribruted_trees.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 39f1ea68-c487-4214-a905-f2352f0f5267
+	fromColumn: Asso_famer_prereg_distribruted_trees.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+
+relationship 7a208460-f201-494f-bcb2-36baad58bdeb
+	fromColumn: Fact_farmer_suggestions.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship c5583d5d-dcec-490b-8e36-f8a77f8a6edc
+	fromColumn: Fact_farmer_suggestions.farmer_suggestion_id
+	toColumn: Dim_farmer_suggestions.farmer_suggestion_id
+
+relationship d16a4f74-7af7-46f9-b9d7-607edfa61d10
+	fromColumn: Fact_farmer_suggestions.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship f0e1e1b4-98f2-4de7-b52b-87829e411edb
+	fromColumn: Fact_farmer_suggestions.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 2f27cb33-36b5-4e2b-8c70-5e06933156bf
+	fromColumn: Fact_farmer_satisfactions.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship d25bf97d-3233-471b-aabf-f6b90db21b0f
+	fromColumn: Fact_farmer_satisfactions.sat_diversity_species
+	toColumn: Dim_farmer_satisfactions.farmer_satisfaction_level
+
+relationship 0083d2a4-fe05-4512-aa79-bb71b07bcb62
+	isActive: false
+	fromColumn: Fact_farmer_satisfactions.sat_of_communication
+	toColumn: Dim_farmer_satisfactions.farmer_satisfaction_level
+
+relationship 8aebb1f2-3dce-4081-b0d2-a7cfb121efd8
+	isActive: false
+	fromColumn: Fact_farmer_satisfactions.sat_of_group_training
+	toColumn: Dim_farmer_satisfactions.farmer_satisfaction_level
+
+relationship 6547217a-09d0-4694-9230-975273673886
+	isActive: false
+	fromColumn: Fact_farmer_satisfactions.sat_of_model
+	toColumn: Dim_farmer_satisfactions.farmer_satisfaction_level
+
+relationship 78a6c629-5a75-4713-8a5c-eb869777801b
+	isActive: false
+	fromColumn: Fact_farmer_satisfactions.sat_of_seedlings_quality
+	toColumn: Dim_farmer_satisfactions.farmer_satisfaction_level
+
+relationship 45a26829-4f7e-42a7-bf50-01cbee903d2d
+	isActive: false
+	fromColumn: Fact_farmer_satisfactions.sat_of_visit
+	toColumn: Dim_farmer_satisfactions.farmer_satisfaction_level
+
+relationship 9cbcb197-d03c-4d80-8902-7dd4afe1f8fb
+	fromColumn: Fact_farmer_satisfactions.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship c1b06075-15ac-4e43-8145-73aad196ed64
+	fromColumn: Fact_farmer_satisfactions.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship bfe69da3-b9cb-440c-a970-f63d419d4af0
+	fromColumn: Fact_farmer_needs.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship cf83434b-ef9a-40cf-bd02-f71689c101f5
+	fromColumn: Fact_farmer_needs.farmer_need_id
+	toColumn: Dim_farmer_needs.farmer_need_id
+
+relationship 29d3a7c0-0819-4b1f-9564-3b14e169c35b
+	fromColumn: Fact_farmer_needs.subprojectwave_registry_id
+	toColumn: Dim_project_team_data_validation.subprojectwave_registry_id
+
+relationship 0015231c-4be3-4dc4-990d-5828b666be06
+	fromColumn: Fact_farmer_needs.farmerwave_id
+	toColumn: Dim_project_team_data_validation_farmer_level.farmerwave_id
+
+relationship 50cd92d5-7bf0-4a4b-aaca-9dc119629e2e
+	fromColumn: Dim_contracts.id_farmer
+	toColumn: Dim_farmers.id_farmer
+
+relationship 10e8f911-31ac-4126-b06a-bd59b4d7a12a
+	fromColumn: Dim_contracts.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+
+relationship c8636765-91e4-4a01-8ee3-8dcf7ce5140c
+	fromColumn: Fact_farmer_contract_remembers.contract_id
+	toColumn: Dim_contracts.contract_id
+
+relationship 178f5541-b125-44c9-8625-96a02e227fb8
+	crossFilteringBehavior: bothDirections
+	fromColumn: Fact_subprojectwaves_allocations.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+
+relationship 585624d4-d9bc-427c-96ca-90717b4ca433
+	crossFilteringBehavior: bothDirections
+	fromColumn: Dim_project_team_data_validation.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+
+relationship c4d0429b-f24d-4a23-9921-c86071f009e2
+	fromColumn: Dim_project_team_data_validation.registry_id
+	toColumn: Dim_registries.registry_id
+
+relationship 163a9fd6-f341-485d-9143-2d81b93795ee
+	fromColumn: Fact_timesheets.TRANSACTION_DATE
+	toColumn: Dim_calendar.Date
+
+relationship ca66c8c5-010d-4bd8-a497-0af2d1fa172c
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Dim_subprojectwaves.subprojectwave_id
+	toColumn: Fact_seedlings_purchase_orders.subprojectwave_id
+
