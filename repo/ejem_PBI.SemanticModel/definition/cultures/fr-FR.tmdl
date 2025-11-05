@@ -84,19 +84,7 @@ cultureInfo fr-FR
 			          "ConceptualProperty": "client's m2 living trees vs trees initially distributed"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Survival Rate at monitoring 2": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_measures_global.implemented_area_estimated": {
 			      "Definition": {
