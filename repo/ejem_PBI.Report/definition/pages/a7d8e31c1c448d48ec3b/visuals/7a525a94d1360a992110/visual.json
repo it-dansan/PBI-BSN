@@ -4,10 +4,10 @@
   "position": {
     "x": 100.57142857142857,
     "y": 273.14285714285717,
-    "z": 11,
+    "z": 11000,
     "height": 410.28571428571428,
     "width": 410.28571428571428,
-    "tabOrder": 5006
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "treemap",
@@ -53,5 +53,37 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "301375a0cdb72b9b000a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_species"
+              }
+            },
+            "Property": "species"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4b30d65e232298e71d3b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "distributed species"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

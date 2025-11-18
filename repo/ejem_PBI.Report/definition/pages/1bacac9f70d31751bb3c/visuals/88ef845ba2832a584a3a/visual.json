@@ -4,10 +4,10 @@
   "position": {
     "x": 696.562282533055,
     "y": 324.23103688239388,
-    "z": 11,
+    "z": 11000,
     "height": 283.25678496868477,
     "width": 461.40570633263746,
-    "tabOrder": 4005
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -516,5 +516,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3d3d779bd22db1d25878",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject_wave"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "494a458091d398b0a370",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "client's pre-registered trees"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

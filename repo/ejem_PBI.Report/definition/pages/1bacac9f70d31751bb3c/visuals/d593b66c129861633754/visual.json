@@ -4,10 +4,10 @@
   "position": {
     "x": 783.80952380952374,
     "y": 176.19047619047618,
-    "z": 12,
+    "z": 12000,
     "height": 133.33333333333331,
     "width": 373.33333333333331,
-    "tabOrder": 4006
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "multiRowCard",

@@ -4,10 +4,10 @@
   "position": {
     "x": 126.15384615384617,
     "y": 352.30769230769232,
-    "z": 10,
+    "z": 10000,
     "height": 254.61538461538461,
     "width": 486.15384615384613,
-    "tabOrder": 4004
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -554,5 +554,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a2f6e26c4807c180c12d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_farmers"
+              }
+            },
+            "Property": "farmer_gender"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e71b81155d86d51d0393",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject_wave"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "22c9bec19b0125d5401c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "pre-registered producers"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
