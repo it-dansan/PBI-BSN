@@ -2,173 +2,71 @@ cultureInfo fr-FR
 
 	linguisticMetadata =
 			{
-			  "Version": "2.0.0",
+			  "Version": "1.0.0",
 			  "Language": "en-US",
 			  "Entities": {
 			    "table_measures_global.clients_distributed_trees": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures_global",
-			          "ConceptualProperty": "client's distributed trees"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "_Measures_global",
+			        "ConceptualProperty": "client's distributed trees"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Delivered Trees": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_measures_global.producers_delivered": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures_global",
-			          "ConceptualProperty": "producers delivered"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "_Measures_global",
+			        "ConceptualProperty": "producers delivered"
 			      },
 			      "State": "Generated"
 			    },
 			    "table_measures_global.clients_inputreceiving_producers": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures_global",
-			          "ConceptualProperty": "client's input-receiving producers"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "_Measures_global",
+			        "ConceptualProperty": "client's input-receiving producers"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Producers": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dim_farmers.farmer_gender": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_farmers",
-			          "ConceptualProperty": "farmer_gender"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "Dim_farmers",
+			        "ConceptualProperty": "farmer_gender"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Gender": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "table_measures_global.clients_m2_living_trees_vs_trees_initially_distributed": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures_global",
-			          "ConceptualProperty": "client's m2 living trees vs trees initially distributed"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "_Measures_global",
+			        "ConceptualProperty": "client's m2 living trees vs trees initially distributed"
 			      },
 			      "State": "Generated"
 			    },
 			    "table_measures_global.implemented_area_estimated": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures_global",
-			          "ConceptualProperty": "implemented area (estimated)"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "_Measures_global",
+			        "ConceptualProperty": "implemented area (estimated)"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Area impacted": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dim_parcels.actual_planting_model_groupes": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_parcels",
-			          "ConceptualProperty": "actual_planting_model (groupes)"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "Dim_parcels",
+			        "ConceptualProperty": "actual_planting_model (groupes)"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Planting model": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "asso_countries_project_waves.country": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Asso_countries_project_waves",
-			          "ConceptualProperty": "country"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "Asso_countries_project_waves",
+			        "ConceptualProperty": "country"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Country": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "dim_species.species_latin_name": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_species",
-			          "ConceptualProperty": "species_latin_name"
-			        }
+			      "Binding": {
+			        "ConceptualEntity": "Dim_species",
+			        "ConceptualProperty": "species_latin_name"
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Species latin name": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    }
 			  }
 			}
