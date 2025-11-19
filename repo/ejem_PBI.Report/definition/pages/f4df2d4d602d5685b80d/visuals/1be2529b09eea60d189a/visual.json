@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "1be2529b09eea60d189a",
+  "position": {
+    "x": 668.955223880597,
+    "y": 465.67164179104475,
+    "z": 11002,
+    "height": 149.55223880597015,
+    "width": 151.34328358208955,
+    "tabOrder": 11001
+  },
+  "visual": {
+    "visualType": "pieChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Asso_famer_prereg_distribruted_trees"
+                    }
+                  },
+                  "Property": "id_farmer"
+                }
+              },
+              "queryRef": "Asso_famer_prereg_distribruted_trees.id_farmer",
+              "nativeQueryRef": "id_farmer",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "53958847e138bba1bd0e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asso_famer_prereg_distribruted_trees"
+              }
+            },
+            "Property": "id_farmer"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
