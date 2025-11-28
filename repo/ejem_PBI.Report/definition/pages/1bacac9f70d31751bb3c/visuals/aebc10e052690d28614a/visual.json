@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "aebc10e052690d28614a",
   "position": {
     "x": 100.19704433497537,
@@ -587,5 +587,79 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "99dabd9fe223706823ae",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject_wave"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "296b3bc470a41129b40a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "pre-registered trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5b9b496b764892517e2e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "distributed trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "21082767190be5e917dc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "redistributed trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8cf546a0b58009a0675a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "planted trees"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

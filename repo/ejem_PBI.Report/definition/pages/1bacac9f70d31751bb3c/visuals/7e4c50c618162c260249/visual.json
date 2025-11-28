@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "7e4c50c618162c260249",
   "position": {
     "x": 98.423645320197039,
@@ -794,5 +794,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "20d234a0dbb60799bbc0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_trees_perfomances"
+              }
+            },
+            "Property": "planting_model"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c3130d50427c290b3154",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject_wave"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "51903e8e128048d26273",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "client's planted trees"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

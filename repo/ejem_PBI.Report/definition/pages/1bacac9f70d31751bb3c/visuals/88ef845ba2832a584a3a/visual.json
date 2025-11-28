@@ -1,18 +1,37 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "88ef845ba2832a584a3a",
   "position": {
-    "x": 696.562282533055,
-    "y": 324.23103688239388,
+    "x": 695.30864197530866,
+    "y": 324.47736625514403,
     "z": 11000,
-    "height": 283.25678496868477,
-    "width": 461.40570633263746,
+    "height": 283.3909465020576,
+    "width": 461.4320987654321,
     "tabOrder": 9000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProcessType"
+                    }
+                  },
+                  "Property": "Process"
+                }
+              },
+              "queryRef": "ProcessType.Process",
+              "nativeQueryRef": "Process",
+              "active": true
+            }
+          ]
+        },
         "Series": {
           "projections": [
             {
@@ -41,11 +60,11 @@
                       "Entity": "_Measures_global"
                     }
                   },
-                  "Property": "client's pre-registered trees"
+                  "Property": "Trees by Process"
                 }
               },
-              "queryRef": "_Measures_global.client's pre-registered trees",
-              "nativeQueryRef": "client's pre-registered trees"
+              "queryRef": "_Measures_global.Trees by Process",
+              "nativeQueryRef": "Trees by Process"
             }
           ]
         }
@@ -60,7 +79,7 @@
                     "Entity": "_Measures_global"
                   }
                 },
-                "Property": "client's pre-registered trees"
+                "Property": "Trees by Process"
               }
             },
             "direction": "Descending"
@@ -291,7 +310,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -332,6 +351,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'client''s pre-registered trees per subproject_wave'"
                 }
               }
             }
@@ -534,7 +560,21 @@
         "type": "Categorical"
       },
       {
-        "name": "494a458091d398b0a370",
+        "name": "832bd46e4d76cca42eac",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ProcessType"
+              }
+            },
+            "Property": "Process"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f555c8790e52a554d807",
         "field": {
           "Measure": {
             "Expression": {
@@ -542,7 +582,7 @@
                 "Entity": "_Measures_global"
               }
             },
-            "Property": "client's pre-registered trees"
+            "Property": "Trees by Process"
           }
         },
         "type": "Advanced"

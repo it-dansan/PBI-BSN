@@ -1,0 +1,29 @@
+table ProcessType
+	lineageTag: 6dfaf2e2-2715-40fb-b8e2-bdac28a46882
+
+	column Process
+		lineageTag: ce57ac8e-d790-44ed-b9a5-449348eb69dd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Process]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ProcessType = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Process", STRING,
+				    {
+				        { "Pre-registered trees" },
+				        { "Distributed trees" },
+				        { "Redistributed trees" },
+				        { "Planted trees" }
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 95e24ddd6edf44a499e86a6d4814975c
+

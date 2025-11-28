@@ -293,3 +293,15 @@ relationship ca66c8c5-010d-4bd8-a497-0af2d1fa172c
 	fromColumn: Dim_subprojectwaves.subprojectwave_id
 	toColumn: Fact_seedlings_purchase_orders.subprojectwave_id
 
+relationship 654eca92-c401-474d-8c91-ae86f4bbd928
+	fromColumn: Fact_trees_perf_extrapolated.state_id
+	toColumn: Dim_states.state_id
+
+relationship 51e8df30-918b-4499-ae5d-59d4076e1042
+	fromColumn: Fact_trees_perf_extrapolated.registry_id
+	toColumn: Dim_registries.registry_id
+
+relationship 744f8d29-124d-4dca-b87b-8ac6c68e2d64
+	fromColumn: Fact_trees_perf_extrapolated.subprojectwave_id
+	toColumn: Dim_subprojectwaves.subprojectwave_id
+

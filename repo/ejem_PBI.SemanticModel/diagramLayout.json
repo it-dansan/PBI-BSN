@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 707.26065925334944,
-        "y": 728.372917738524
+        "x": 1531.6001448335555,
+        "y": 0
       },
       "nodes": [
         {
@@ -669,6 +669,31 @@
             "width": 234
           },
           "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 5657.7408823293827,
+            "y": 0
+          },
+          "nodeIndex": "Fact_trees_perf_extrapolated",
+          "nodeLineageTag": "929bf59a-3ab2-49fe-9f10-851ea4b1c88c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5931.7408823293827,
+            "y": 0
+          },
+          "nodeIndex": "ProcessType",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Toutes les tables",

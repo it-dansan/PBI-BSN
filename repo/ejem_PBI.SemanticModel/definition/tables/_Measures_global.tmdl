@@ -1342,6 +1342,171 @@ table _Measures_global
 		sourceLineageTag: 870a0f3c-eb06-4ec4-840e-595d7fc962a9
 		dataCategory: Uncategorized
 
+	measure 'm1 new producers beneficiaries' = EXTERNALMEASURE("m1 new producers beneficiaries", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 4_Monitoring M1
+		lineageTag: ad36493d-dfbc-4bb7-8a85-3b2fb2b9626d
+		sourceLineageTag: 181173ad-d5fc-46cf-8e35-32b76f6495d7
+		dataCategory: Uncategorized
+
+	measure 'm2 producers beneficiaries' = EXTERNALMEASURE("m2 producers beneficiaries", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 5_Monitoring M2
+		lineageTag: 72b6b3cf-c70c-4c6c-86fd-22d5a17735ed
+		sourceLineageTag: 8eb42a97-6390-45e7-baac-c939f06d71fc
+		dataCategory: Uncategorized
+
+	measure 'm2 new producers beneficiaries' = EXTERNALMEASURE("m2 new producers beneficiaries", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 5_Monitoring M2
+		lineageTag: 37c1643e-3a75-402a-b2c5-22d493124bf5
+		sourceLineageTag: 96adb661-db13-4f27-a24e-5006d1bd9f22
+		dataCategory: Uncategorized
+
+	measure '(m2 effective sampling rate) producers delivered' = EXTERNALMEASURE("(m2 effective sampling rate) producers delivered", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 5_Monitoring M2 (intermediate calc)
+		lineageTag: faf8c2a0-b8c7-4c1a-9137-090418dd0a98
+		sourceLineageTag: e1e6d0e1-e0ad-4412-ad34-9bd24e2dbdbc
+		dataCategory: Uncategorized
+
+	measure '(m2 effective sampling rate) m2 producers monitored and delivered' = EXTERNALMEASURE("(m2 effective sampling rate) m2 producers monitored and delivered", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 5_Monitoring M2 (intermediate calc)
+		lineageTag: 2cd27125-0901-4d8d-84b9-b88a765e13a4
+		sourceLineageTag: 31be0740-1aad-42d2-9540-bff4e647f4c9
+		dataCategory: Uncategorized
+
+	measure '(m1 effective sampling rate) m1 producers monitored and delivered' = EXTERNALMEASURE("(m1 effective sampling rate) m1 producers monitored and delivered", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 4_Monitoring M1 (intermediate calc)
+		lineageTag: d4977112-2e5e-4363-a995-81663132e9a3
+		sourceLineageTag: b62b844f-eadb-4a4e-ab6f-4117376e27b0
+		dataCategory: Uncategorized
+
+	measure 'm1 living trees (extrapolated)' = EXTERNALMEASURE("m1 living trees (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: #,0
+		displayFolder: 4_Monitoring M1
+		lineageTag: 2e56edda-a6bd-41f1-8fe4-44872fff1bed
+		sourceLineageTag: 2286dbda-b70a-48f4-9990-b98d6a6ac912
+		dataCategory: Uncategorized
+
+	measure 'client''s m1 living trees (extrapolated)' = EXTERNALMEASURE("client's m1 living trees (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: #,0
+		displayFolder: Client 4_Monitoring M1
+		lineageTag: 7d74b962-725f-4028-b757-ee55662b7edd
+		sourceLineageTag: 010a43f7-d794-4c2c-8ad7-9f20f6fb0860
+		dataCategory: Uncategorized
+
+	measure 'trees (extrapolated)' = EXTERNALMEASURE("trees (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		lineageTag: f4324579-2022-4c30-a55f-652b3a95c6f6
+		sourceLineageTag: de08741f-6c7c-413d-932c-bf591027f486
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'm2 living trees (extrapolated)' = EXTERNALMEASURE("m2 living trees (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: #,0
+		displayFolder: 5_Monitoring M2
+		lineageTag: 689bb322-0d59-4348-9286-b3c44843b997
+		sourceLineageTag: 759bfab8-e5fd-4e28-bd6f-acc6cfe47e5d
+		dataCategory: Uncategorized
+
+	measure 'client''s m2 living trees (extrapolated)' = EXTERNALMEASURE("client's m2 living trees (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: #,0
+		displayFolder: Client 5_Monitoring M2
+		lineageTag: 06db4b8d-19ef-40df-99a0-1f85b7f75bd1
+		sourceLineageTag: 512c2263-40ca-4a1b-9380-0c64cb52e317
+		dataCategory: Uncategorized
+
+	measure 'm2 effective sampling rate' = EXTERNALMEASURE("m2 effective sampling rate", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: 5_Monitoring M2
+		lineageTag: fb407f3b-2b48-41be-8a7d-fc8087526012
+		sourceLineageTag: b686e7aa-a22f-4370-a636-549da5b8c5b3
+		dataCategory: Uncategorized
+
+	measure '(m1 effective sampling rate) producers delivered' = EXTERNALMEASURE("(m1 effective sampling rate) producers delivered", INTEGER, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0
+		displayFolder: 4_Monitoring M1 (intermediate calc)
+		lineageTag: 97b06bd5-e4ac-4e10-82e7-9f1ece160216
+		sourceLineageTag: 123cd99f-cffe-417b-85d0-12c31e44a2ee
+		dataCategory: Uncategorized
+
+	measure 'm1 effective sampling rate' = EXTERNALMEASURE("m1 effective sampling rate", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: 4_Monitoring M1
+		lineageTag: 01028e74-644b-4464-b2ab-0c70dabb5494
+		sourceLineageTag: 132da793-c9f4-4068-8bbd-e6b8674dd3c2
+		dataCategory: Uncategorized
+
+	measure '(m1 static surv rate calc) m1 living trees extrapolated' = EXTERNALMEASURE("(m1 static surv rate calc) m1 living trees extrapolated", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		displayFolder: 4_Monitoring M1 (intermediate calc)
+		lineageTag: 9fb714bb-087f-46c6-ad0b-e6d034311447
+		sourceLineageTag: f084958f-7738-4d06-a00a-35dac36a67b8
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '(m2 static surv rate calc) m2 living trees extrapolated' = EXTERNALMEASURE("(m2 static surv rate calc) m2 living trees extrapolated", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		displayFolder: 5_Monitoring M2 (intermediate calc)
+		lineageTag: 01d68b45-17e9-4755-a418-05f3fb001fa2
+		sourceLineageTag: c9c553c5-d38e-43d4-baaa-0f01f734dbb9
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '(client''s m1 static surv rate calc) m1 living trees extrapolated' = EXTERNALMEASURE("(client's m1 static surv rate calc) m1 living trees extrapolated", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		displayFolder: Client 4_Monitoring M1 (intermediate calc)
+		lineageTag: d6372d3e-9671-41b0-9471-5d9e50a0cd41
+		sourceLineageTag: de89033e-7b31-46f7-a435-5f0f54bf2fa4
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '(client''s m2 static surv rate calc) m2 living trees extrapolated' = EXTERNALMEASURE("(client's m2 static surv rate calc) m2 living trees extrapolated", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		displayFolder: Client 5_Monitoring M2 (intermediate calc)
+		lineageTag: 66dc3dd7-aab4-43de-8e02-b70674667ffc
+		sourceLineageTag: 113b0930-2607-4004-8850-e1c9adbf58c5
+		dataCategory: Uncategorized
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'client''s m1 living trees vs trees initially distributed (extrapolated)' = EXTERNALMEASURE("client's m1 living trees vs trees initially distributed (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Client 4_Monitoring M1
+		lineageTag: f61412ba-97d5-4ed6-b3b2-12e5c1c08f0f
+		sourceLineageTag: 04860cc0-2383-4953-8c06-4d4c4f7e32e2
+		dataCategory: Uncategorized
+
+	measure 'client''s m2 living trees vs trees initially distributed (extrapolated)' = EXTERNALMEASURE("client's m2 living trees vs trees initially distributed (extrapolated)", DOUBLE, "DirectQuery à AS – Golden_field_dataset")
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Client 5_Monitoring M2
+		lineageTag: af5b4f88-46fa-486c-8034-8e11043754ad
+		sourceLineageTag: e4ab580d-f6b0-4f3e-a33d-7c97ecb06b7a
+		dataCategory: Uncategorized
+
+	measure 'Trees by Process' = ```
+			
+			VAR selProcess = SELECTEDVALUE(ProcessType[Process])
+			RETURN
+			SWITCH(
+			    selProcess,
+			    "Pre-registered trees", [pre-registered trees],
+			    "Distributed trees",    [distributed trees],
+			    "Redistributed trees",  [redistributed trees],
+			    "Planted trees",        [planted trees],
+			    BLANK()
+			)
+			
+			```
+		formatString: #,0
+		lineageTag: 364155c5-71d6-4cbd-a080-99d1b4b71cc3
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
 	partition _Measures_global = entity
 		mode: directQuery
 		source

@@ -99,6 +99,17 @@ table Dim_project_team_data_validation
 
 		annotation SummarizationSetBy = User
 
+	column registry_sampled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 0f8dfe3b-63ec-4fcc-8be9-c5add01caea3
+		sourceLineageTag: ad74fe98-5f32-49e6-8439-5cab1b63ac72
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_sampled
+
+		annotation SummarizationSetBy = User
+
 	partition Dim_project_team_data_validation = entity
 		mode: directQuery
 		source

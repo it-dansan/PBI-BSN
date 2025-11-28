@@ -1,0 +1,70 @@
+table Fact_trees_perf_extrapolated
+	lineageTag: 929bf59a-3ab2-49fe-9f10-851ea4b1c88c
+	sourceLineageTag: d31050f4-6122-40dd-a839-33c00e7da988
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: ecb4b88f-aac8-417d-91ae-7109215c88e3
+		sourceLineageTag: daaa3eba-8e43-4d05-bd30-822b65b2e892
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column registry_id
+		dataType: double
+		lineageTag: 1b230408-bb88-41fb-8d18-debb0c9606a8
+		sourceLineageTag: 7ce81a5c-3fbf-4914-badb-e737190d2418
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column state_id
+		dataType: double
+		lineageTag: ce534887-ba79-4ebf-b9cd-8466cd18e416
+		sourceLineageTag: 20b2ba3a-6756-436c-ae94-b90f8230144b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: state_id
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column redistribution_status_id
+		dataType: double
+		lineageTag: 35f4ddee-7537-4ee1-82ce-f1341243fa99
+		sourceLineageTag: 075aa193-d0b5-44f1-a40b-c7fefae3be3d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: redistribution_status_id
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nb_trees
+		dataType: double
+		lineageTag: fb31b7eb-4e06-46eb-b2ad-54d42d9a3be7
+		sourceLineageTag: 6881a0a3-dfb7-4463-850f-2dbd0ff10ac7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_trees
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_trees_perf_extrapolated = entity
+		mode: directQuery
+		source
+			entityName: Fact_trees_perf_extrapolated
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+
