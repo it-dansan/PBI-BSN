@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "65ae72105d00acad4ca6",
   "position": {
     "x": 100.57142857142857,
     "y": 173.71428571428572,
-    "z": 9000,
+    "z": 8000,
     "height": 88,
     "width": 196.57142857142858,
-    "tabOrder": 9000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "_Measures_global"
                     }
                   },
-                  "Property": "species"
+                  "Property": "distributed species"
                 }
               },
-              "queryRef": "_Measures_global.species",
-              "nativeQueryRef": "species"
+              "queryRef": "_Measures_global.distributed species",
+              "nativeQueryRef": "distributed species"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Measures_global"
                   }
                 },
-                "Property": "species"
+                "Property": "distributed species"
               }
             },
             "direction": "Descending"

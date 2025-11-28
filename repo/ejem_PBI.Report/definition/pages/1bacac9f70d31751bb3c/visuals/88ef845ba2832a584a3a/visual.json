@@ -7,7 +7,7 @@
     "z": 11000,
     "height": 283.3909465020576,
     "width": 461.4320987654321,
-    "tabOrder": 9000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -542,51 +542,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3d3d779bd22db1d25878",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_subprojectwaves"
-              }
-            },
-            "Property": "subproject_wave"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "832bd46e4d76cca42eac",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ProcessType"
-              }
-            },
-            "Property": "Process"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f555c8790e52a554d807",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "Trees by Process"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

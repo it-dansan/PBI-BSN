@@ -103,14 +103,14 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'acopagro'"
+                          "Value": "'oro verde'"
                         }
                       }
                     ],
                     [
                       {
                         "Literal": {
-                          "Value": "'oro verde'"
+                          "Value": "'acopagro'"
                         }
                       }
                     ]
@@ -131,8 +131,6 @@
       {
         "name": "49ff1f38d717acb4dad6",
         "boundFilter": "871f8a038d2dc0c9c71d",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {
@@ -147,8 +145,6 @@
       {
         "name": "2767e153485b6ba50002",
         "boundFilter": "2b1701c34b577a355053",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {

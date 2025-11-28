@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "aebc10e052690d28614a",
   "position": {
-    "x": 100.19704433497537,
-    "y": 176.45320197044336,
+    "x": 100.35029190992493,
+    "y": 176.14678899082568,
     "z": 6000,
-    "height": 133.00492610837438,
-    "width": 668.57142857142856,
-    "tabOrder": 11000
+    "height": 133.44453711426189,
+    "width": 665.08757297748116,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -587,79 +587,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "99dabd9fe223706823ae",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_subprojectwaves"
-              }
-            },
-            "Property": "subproject_wave"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "296b3bc470a41129b40a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "pre-registered trees"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5b9b496b764892517e2e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "distributed trees"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "21082767190be5e917dc",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "redistributed trees"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "8cf546a0b58009a0675a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "planted trees"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

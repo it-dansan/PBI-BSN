@@ -308,56 +308,8 @@
         "howCreated": "User"
       },
       {
-        "name": "4c8d20400483c17400b0",
-        "ordinal": 5,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_species"
-              }
-            },
-            "Property": "species_latin_name"
-          }
-        },
-        "type": "Advanced",
-        "howCreated": "User",
-        "isLockedInViewMode": true,
-        "objects": {
-          "general": [
-            {
-              "properties": {
-                "isInvertedSelectionMode": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "true"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "name": "5e82232fe5757740cbde",
-        "ordinal": 6,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_species"
-              }
-            },
-            "Property": "species_latin_name"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
         "name": "aa8cc42adf5847833797",
-        "ordinal": 7,
+        "ordinal": 5,
         "field": {
           "Column": {
             "Expression": {
@@ -394,7 +346,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "false"
               }
             }
           }
@@ -412,7 +364,8 @@
     "polarB605C239BFD9BFED71A7A3BE1340EFEB",
     "RadarChart1446119667547",
     "radarChart5F59D098BB90499F8C33EBEBCEE4FEBF",
-    "radarChartE89D21F3E4E64221B79113B5015EA81B"
+    "radarChartE89D21F3E4E64221B79113B5015EA81B",
+    "clusteredBarChartByAkvelon77BB704116614231891ABD5C195D3DC6"
   ],
   "resourcePackages": [
     {

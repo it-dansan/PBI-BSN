@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "e7d17aeb45c55a325e20",
   "position": {
     "x": 530.12205044751829,
     "y": 172.88852725793328,
-    "z": 6000,
+    "z": 5000,
     "height": 510.33360455655003,
     "width": 628.02278275020342,
-    "tabOrder": 8000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -23,15 +23,78 @@
                       "Entity": "Dim_species"
                     }
                   },
-                  "Property": "species_latin_name"
+                  "Property": "species"
                 }
               },
-              "queryRef": "Dim_species.species_latin_name",
-              "nativeQueryRef": "species_latin_name",
+              "queryRef": "Dim_species.species",
+              "nativeQueryRef": "species",
               "active": true
             }
           ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures_global"
+                    }
+                  },
+                  "Property": "distributed trees"
+                }
+              },
+              "queryRef": "_Measures_global.distributed trees",
+              "nativeQueryRef": "distributed trees"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures_global"
+                    }
+                  },
+                  "Property": "redistributed trees"
+                }
+              },
+              "queryRef": "_Measures_global.redistributed trees",
+              "nativeQueryRef": "redistributed trees"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures_global"
+                    }
+                  },
+                  "Property": "% of Total Trees"
+                }
+              },
+              "queryRef": "_Measures_global.% of Total Trees",
+              "nativeQueryRef": "% of Total Trees"
+            }
+          ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures_global"
+                  }
+                },
+                "Property": "% of Total Trees"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -286,6 +349,50 @@
             }
           }
         }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "199.00091079799145D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_species.species"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "153.83500844754568D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures_global.redistributed trees"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "136.33454981626585D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures_global.distributed trees"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -527,5 +634,114 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d6eaace5ec8e80a10bd4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "Species Has Trees"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Measures_global",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 2,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "_"
+                        }
+                      },
+                      "Property": "Species Has Trees"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "3af7b870e80bb9878200",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "distributed trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "211ff4f8d4b18b0379b5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "redistributed trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ae1ae0ee89d439cdd990",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_species"
+              }
+            },
+            "Property": "species"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ad561a6e92c31d88898b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "% of Total Trees"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

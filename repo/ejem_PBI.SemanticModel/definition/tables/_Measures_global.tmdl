@@ -1507,6 +1507,66 @@ table _Measures_global
 
 		changedProperty = FormatString
 
+	measure 'Pre-Planting Loss (%)' =
+			
+			DIVIDE([planted trees], [distributed trees])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 790cbe4f-3c51-461f-a225-d8d90209ea09
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+	measure 'Average Species per parcel' = [distributed species]/[planted parcels]
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 0f5425a3-33b7-4830-89c8-1ec9f9184a4e
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+	measure 'Species Has Trees' = ```
+			
+			VAR dist = [distributed trees]
+			VAR redist = [redistributed trees]
+			RETURN 
+			IF( dist + redist > 0, 1, BLANK() )
+			```
+		lineageTag: 077436dd-0ec9-4a27-87d7-0a0adacaff2e
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% of Total Trees' = ```
+			
+			VAR SpeciesTotal = [Total Trees by Species]
+			VAR GrandTotal =
+			    CALCULATE(
+			        [Total Trees by Species],
+			        ALL ( 'Dim_species'[species] )  
+			    )
+			RETURN
+			DIVIDE( SpeciesTotal, GrandTotal )
+			
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8ac34cb7-9965-4bf4-8ab1-ee8410456cd9
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+	measure 'Total Trees by Species' =
+			
+			[distributed trees] + [redistributed trees]
+		formatString: #,0
+		lineageTag: 3abd6a33-aebb-4f00-85c2-3e04b30d48a4
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
 	partition _Measures_global = entity
 		mode: directQuery
 		source

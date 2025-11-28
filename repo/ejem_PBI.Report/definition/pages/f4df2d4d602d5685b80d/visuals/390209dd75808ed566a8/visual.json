@@ -7,7 +7,7 @@
     "z": 11000,
     "height": 254.61538461538461,
     "width": 486.15384615384613,
-    "tabOrder": 9000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -566,51 +566,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e2a2b34770d947e381e9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_farmers"
-              }
-            },
-            "Property": "farmer_gender"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "56f1154670c3dcb40d3d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_subprojectwaves"
-              }
-            },
-            "Property": "subproject_wave"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "33a64b7037b0cd279027",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "producers at planting registry"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

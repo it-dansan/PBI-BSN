@@ -65,6 +65,7 @@ ref table Fact_seedlings_purchase_orders
 ref table _Datapoints
 ref table Fact_trees_perf_extrapolated
 ref table ProcessType
+ref table TreeType
 
 ref cultureInfo fr-FR
 

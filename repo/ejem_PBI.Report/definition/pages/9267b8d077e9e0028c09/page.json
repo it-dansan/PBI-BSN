@@ -131,8 +131,6 @@
       {
         "name": "2f8e7090b9e123b053ee",
         "boundFilter": "8c76e677518caeb10948",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {
@@ -147,8 +145,6 @@
       {
         "name": "c438076637d243003e77",
         "boundFilter": "975dd4e078067c8ee414",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {

@@ -1,0 +1,40 @@
+table TreeType
+	lineageTag: b0cef2c2-7443-452c-a1b0-49baee0ca3eb
+
+	measure 'Trees by Type_2' = ```
+			
+			VAR SelectedType = SELECTEDVALUE( TreeType[Type] )
+			RETURN
+			SWITCH(
+			    SelectedType,
+			    "Distributed",   [distributed trees],
+			    "Redistributed", [redistributed trees],
+			    BLANK()
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 37f04483-f6de-4efd-afec-ca467835018a
+
+	column Type
+		lineageTag: 7e99fd9c-914e-42fe-b118-714b8916c8bf
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Type]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TreeType = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Type", STRING,
+				    {
+				        { "Distributed" },
+				        { "Redistributed" }
+				    }
+				)
+
+	annotation PBI_Id = f243afdf0639493b90c6148d33705b2f
+

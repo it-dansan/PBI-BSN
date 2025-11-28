@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "a82c83a32cea017e8470",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "5d6a0270ab09e2431c7e",
   "position": {
-    "x": 314.28571428571428,
-    "y": 173.71428571428572,
-    "z": 10000,
-    "height": 88,
-    "width": 196.57142857142858,
-    "tabOrder": 10000
+    "x": 296.37192342752962,
+    "y": 173.8559708295351,
+    "z": 12000,
+    "height": 87.511394712853232,
+    "width": 205.36007292616225,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "_Measures_global"
                     }
                   },
-                  "Property": "species"
+                  "Property": "Average Species per parcel"
                 }
               },
-              "queryRef": "_Measures_global.species",
-              "nativeQueryRef": "species"
+              "queryRef": "_Measures_global.Average Species per parcel",
+              "nativeQueryRef": "Average Species per parcel"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Measures_global"
                   }
                 },
-                "Property": "species"
+                "Property": "Average Species per parcel"
               }
             },
             "direction": "Descending"
@@ -157,5 +157,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e68ee0c2bc147a07b804",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "Average Species per parcel"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

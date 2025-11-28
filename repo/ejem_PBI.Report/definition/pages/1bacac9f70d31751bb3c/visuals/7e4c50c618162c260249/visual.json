@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 133.00492610837438,
     "width": 579.90147783251234,
-    "tabOrder": 7000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -794,51 +794,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "20d234a0dbb60799bbc0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_trees_perfomances"
-              }
-            },
-            "Property": "planting_model"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c3130d50427c290b3154",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_subprojectwaves"
-              }
-            },
-            "Property": "subproject_wave"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "51903e8e128048d26273",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures_global"
-              }
-            },
-            "Property": "client's planted trees"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

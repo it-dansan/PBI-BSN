@@ -53,6 +53,59 @@ table Asso_countries_project_waves
 
 		changedProperty = Name
 
+	measure 'Trees by Type' =
+			
+			SWITCH(
+			    SELECTEDVALUE(TreeType[Type]),
+			    "Distributed", [distributed trees],
+			    "Redistributed", [redistributed trees]
+			)
+		formatString: 0
+		lineageTag: 47d1569a-ee3a-405f-b10f-b37136a49c1a
+
+		changedProperty = Name
+
+	measure '% of Species Trees by Type' = ```
+			
+			VAR TypeSel =
+			    SELECTEDVALUE ( TreeType[Type] )
+			
+			VAR SpeciesTypeTotal =
+			    SWITCH (
+			        TypeSel,
+			        "Distributed",   [distributed trees],
+			        "Redistributed", [redistributed trees]
+			    )
+			
+			VAR SpeciesTotal = [Total Trees by Species]   -- dist + redist
+			
+			RETURN
+			DIVIDE ( SpeciesTypeTotal, SpeciesTotal )
+			
+			```
+		lineageTag: 3e22ff21-028c-4e07-afb8-62f59087441b
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% of Total Trees by Type' =
+			
+			VAR SpeciesTypeTotal = [Trees by Type]
+			VAR GrandTotal =
+			    CALCULATE(
+			        [Trees by Type],
+			        ALL ( 'Dim_species'[species] )
+			    )
+			RETURN
+			DIVIDE( SpeciesTypeTotal, GrandTotal )
+		formatString: #,0.00
+		lineageTag: 2141328d-793b-41b8-9990-6e746a5ed483
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
 	column country
 		dataType: string
 		lineageTag: c8d24ce3-24d0-4c5a-a9d1-57c01b5516b0
