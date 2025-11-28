@@ -71,6 +71,20 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Row"
+          }
         }
       ],
       "values": [
@@ -161,5 +175,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c76b6daaa18399c002da",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject_wave"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1337ebff6e00b1a9e014",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "Pre-Planting Loss (%)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

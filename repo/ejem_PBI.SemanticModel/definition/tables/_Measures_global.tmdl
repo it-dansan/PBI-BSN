@@ -1517,14 +1517,6 @@ table _Measures_global
 
 		changedProperty = FormatString
 
-	measure 'Average Species per parcel' = [distributed species]/[planted parcels]
-		formatString: 0.00\ %;-0.00\ %;0.00\ %
-		lineageTag: 0f5425a3-33b7-4830-89c8-1ec9f9184a4e
-
-		changedProperty = Name
-
-		changedProperty = FormatString
-
 	measure 'Species Has Trees' = ```
 			
 			VAR dist = [distributed trees]
@@ -1566,6 +1558,32 @@ table _Measures_global
 		changedProperty = Name
 
 		changedProperty = FormatString
+
+	measure 'Avg Species per Parcel' =
+			
+			AVERAGEX(
+			    VALUES( Dim_parcels[parcel_id] ),
+			    [Species per Parcel]
+			)
+		lineageTag: 7dc1ff1b-9470-43b8-b32f-f484dfd98da3
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Species per Parcel' =
+			
+			VAR SpeciesWithTrees =
+			    FILTER(
+			        VALUES( Dim_species[species] ),
+			        [distributed trees] + [redistributed trees] > 0
+			    )
+			RETURN
+			COUNTROWS(SpeciesWithTrees)
+		formatString: 0
+		lineageTag: 0589a901-51af-4024-b182-1c1993fc31a2
+
+		changedProperty = Name
 
 	partition _Measures_global = entity
 		mode: directQuery

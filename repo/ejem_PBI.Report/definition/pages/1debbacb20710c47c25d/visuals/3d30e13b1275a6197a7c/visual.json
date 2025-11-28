@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "3d30e13b1275a6197a7c",
+  "position": {
+    "x": 851.09947643979058,
+    "y": 92.481675392670155,
+    "z": 2,
+    "height": 195.68586387434556,
+    "width": 230.53403141361255,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures_global"
+                    }
+                  },
+                  "Property": "Avg Species per Parcel"
+                }
+              },
+              "queryRef": "_Measures_global.Avg Species per Parcel",
+              "nativeQueryRef": "Avg Species per Parcel"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures_global"
+                  }
+                },
+                "Property": "Avg Species per Parcel"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "309c9bef151e093e1199",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "Avg Species per Parcel"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
