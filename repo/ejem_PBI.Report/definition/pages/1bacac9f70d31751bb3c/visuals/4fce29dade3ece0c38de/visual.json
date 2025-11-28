@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4fce29dade3ece0c38de",
   "position": {
-    "x": 14.138438880706921,
-    "y": 13.195876288659793,
+    "x": 48.632218844984806,
+    "y": 12.644376899696049,
     "z": 4000,
-    "height": 39.587628865979376,
-    "width": 49.955817378497784,
+    "height": 38.90577507598784,
+    "width": 49.6048632218845,
     "tabOrder": 3000
   },
   "visual": {
@@ -37,6 +37,35 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'f4df2d4d602d5685b80d'"
+                }
+              }
+            }
           }
         }
       ]

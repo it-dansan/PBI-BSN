@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "ceabc8fa307818eb42be",
   "position": {
     "x": 641.538461538461,
@@ -332,7 +332,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Participants Pre-Registered'"
+                  "Value": "'Participants Enrolled (at Planting Registry)'"
                 }
               }
             },
@@ -564,5 +564,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d332f4712ebac72a8433",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_farmers"
+              }
+            },
+            "Property": "farmer_gender"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ce5549a4ed013bdcbbe7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject_wave"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1074fb94189cca8180b4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "producers at planting registry"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "5531fbc5b181125ab5b5",
+  "name": "43394fadad6d81e757a4",
   "position": {
-    "x": 707.45177105156142,
-    "y": 247.38934741441429,
-    "z": 9000,
-    "height": 40.530191458026508,
-    "width": 442.06185567010306,
-    "tabOrder": 9000
+    "x": 0.27355623100303905,
+    "y": 0.2735562310030395,
+    "z": 13002,
+    "height": 63.221884498480243,
+    "width": 49.6048632218845,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "actionButton",
@@ -45,18 +45,46 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Species'"
+                  "Value": "'⌂'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "18D"
+                  "Value": "35D"
                 }
               }
-            },
-            "fontColor": {
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "lineColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -72,9 +100,7 @@
           "selector": {
             "id": "default"
           }
-        }
-      ],
-      "outline": [
+        },
         {
           "properties": {
             "show": {
@@ -89,26 +115,6 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Project participants '"
-                }
-              }
-            }
-          }
-        }
-      ],
       "visualLink": [
         {
           "properties": {
@@ -129,7 +135,7 @@
             "navigationSection": {
               "expr": {
                 "Literal": {
-                  "Value": "'a7d8e31c1c448d48ec3b'"
+                  "Value": "'9fa2cc72e8718cea5c61'"
                 }
               }
             }
