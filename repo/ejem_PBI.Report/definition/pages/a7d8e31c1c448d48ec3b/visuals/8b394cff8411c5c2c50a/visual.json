@@ -317,6 +317,38 @@
                   "Value": "'Trees Distributed by Species'"
                 }
               }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#666666'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -402,6 +434,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "82926307520390e81ced",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "distributed trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c481d6a9990606da2ce1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "redistributed trees"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "de1ba7ef9e103a1acb59",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures_global"
+              }
+            },
+            "Property": "Total Trees by Species"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

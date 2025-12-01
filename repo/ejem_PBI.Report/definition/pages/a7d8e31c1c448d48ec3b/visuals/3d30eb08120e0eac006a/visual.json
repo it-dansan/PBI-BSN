@@ -67,14 +67,14 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'oro verde'"
+                                "Value": "'acopagro'"
                               }
                             }
                           ],
                           [
                             {
                               "Literal": {
-                                "Value": "'acopagro'"
+                                "Value": "'oro verde'"
                               }
                             }
                           ]
@@ -354,5 +354,23 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "65fb69b969c8383d0a26",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_subprojectwaves"
+              }
+            },
+            "Property": "subproject"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
